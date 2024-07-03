@@ -1,15 +1,26 @@
 #!/bin/bash
-YELLOW='\033[1;33m'
+
+startWithCode() {
+  node --trace-warnings connect.js cd
+}
+
+startWithQr() {
+  node --trace-warnings connect.js qr
+}
+
+defaultStart() {
+  node --trace-warnings connect.js
+}
 
 while :
 do
-  printf "${YELLOW}\nINICIANDO HUTAO BOT V6.0 ^-^ \n AGUARDE UM MOMENTO...🌸\n"
+  echo -e "\033[1;33mINICIANDO HUTAO BOT V6.0 ^-^ \n AGUARDE UM MOMENTO...🌸\033[0m"
   if [ "$1" = "cd" ]; then
-    node connect.js cd
+    startWithCode
   elif [ "$1" = "qr" ]; then
-    node connect.js qr
+    startWithQr
   else 
-    node connect.js
+    defaultStart
   fi
   sleep 1
 done

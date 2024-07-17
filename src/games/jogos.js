@@ -11,11 +11,6 @@ exports.palavrasANA = [
         embaralhada: "IELABA"
     }, 
     {
-        resposta: "ALUCK", 
-        dica:"é uma especie de primata", 
-        embaralhada: "LUACK"
-    }, 
-    {
         resposta: "TROVAO", 
         dica: "estar sempre presente nos dias chuvoso", 
         embaralhada: "AOTRVO"

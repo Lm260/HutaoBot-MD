@@ -5,15 +5,15 @@
  */
 
 const txt = {
-    Owner: "*SOMENTE MEU DONO PODE USAR ESTE COMANDO😼*",
+    Owner: "*SOMENTE MEU DONO PODE USAR ESTE COMANDO. 😼*",
     
-    only_leaders: "*SOMENTE MEUS LÍDERES PODEM EXECUTAR ESTE COMANDO😼*",
+    only_leaders: "*SOMENTE MEUS LÍDERES PODEM EXECUTAR ESTE COMANDO. 😼*",
     
-    only_adm: "*SOMENTE ADM PODE EXECUTAR ESTE COMANDO😼*",
+    only_adm: "*SOMENTE ADMS PODE EXECUTAR ESTE COMANDO. 😼*",
     
-    only_vip: "*ESTE COMANDO É EXCLUSIVO SOMENTE PARA OS VIP🍸💸*",
+    only_vip: "*ESTE COMANDO É EXCLUSIVO SOMENTE PARA OS VIP. 🍸💸*",
     
-    only_group: "*SOMENTE EM GRUPOS🙇‍♀️*",
+    only_group: "*ESTE COMANDO É SOMENTE PARA GRUPOS. 🙇‍♀️*",
     
     isBotAdm: "*Eu presciso ser ADM do grupo* 🥺",
     

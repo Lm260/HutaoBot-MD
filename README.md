@@ -1,8 +1,8 @@
-<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=836FFF&center=falso&vCenter=falso&lines=𝐻𝑢𝑡𝑎𝑜+𝐵𝑜𝑡+𝑀𝐷✰+V5.5✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;✰✰✰✰✰">      
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=836FFF&center=falso&vCenter=falso&lines=𝐻𝑢𝑡𝑎𝑜+𝐵𝑜𝑡+𝑀𝐷✰+V6.5✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;✰✰✰✰✰">      
 
 <h1 align="center">
 <p>
-<img src= "https://telegra.ph/file/9995a29f1d349be4495a0.jpg" alt="HUTAO-BOT V5.5✓" width="720">
+<img src= "https://telegra.ph/file/9995a29f1d349be4495a0.jpg" alt="HUTAO-BOT V6.5✓" width="720">
 </p>
 
 <p align="center">
@@ -11,13 +11,12 @@
 
 <p align="center">
 <img title="Autor" src="https://img.shields.io/badge/Autor-@Lm-orange.svg?style=for-the-badge&logo=github"></a>
-<img title="Versão" src="https://img.shields.io/badge/Versão-5.5-orange.svg?style=for-the-badge&logo=github"></a>
+<img title="Versão" src="https://img.shields.io/badge/Versão-6.5.2-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 
 <div align="center">
   
-[![WhatsApp](https://img.shields.io/badge/Suporte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](
-https://chat.whatsapp.com/JZQo3kwQLZI58kf5EcOgDZ)
+[![WhatsApp](https://img.shields.io/badge/Suporte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/JZQo3kwQLZI58kf5EcOgDZ)
 </div>
 
 # INSTALAÇÃO PELO TERMUX
@@ -27,6 +26,11 @@ https://chat.whatsapp.com/JZQo3kwQLZI58kf5EcOgDZ)
 
 ## Executando comandos básicos: ✨
 
+**Após instalar o apk, execute os seguintes comandos abaixo:**
+
+> Copie e cole apenas 1 comando por vez, e pressione enter ou pular linha no seu teclado.
+> Espere o comando acabar para iniciar outro. 
+------------------
 1 - COMANDO: 🌸
 ````bash
 termux-change-repo
@@ -53,22 +57,4 @@ cd /sdcard && git clone https://github.com/Lm260/HutaoBot-MD
 cd /sdcard/hutaoBot-MD && npm start
 ````
 > Use-o para toda vez que for ligar o bot!
-------------------
-
-# API-KEY
-
-**Passo a passo para obter uma key da gemini**
-
-1 - PASSO: ✨
-
-Obtenha uma api-key: [Obter apikey](https://makersuite.google.com/app/apikey)
-> **Atenção!!**
-> Você deve copiar a key após ser gerada.
-------------------
-2 - PASSO: ✨
-
-- Agora no seu bot, você deve colar a key em "necessary.json"
-- Está em **dono/settings/necessary.json**
-> Após isso cole a key em:
-> **"API_KEY_GEMINI": "COLE_AQUI"**
 ------------------

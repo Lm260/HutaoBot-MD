@@ -176,8 +176,6 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╭━━━─────━━━╮
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}play "txt/url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}Play2 "txt/url"
-┃╎✰ۣۜۜ͜͡✨ ${prefixo}PlayMix "Título"
-┃╎✰ۣۜۜ͜͡✨ ${prefixo}PlayMixV "Título"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}playvideo "txt/url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}playvid2 "txt/url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}playdoc "txt/url" 

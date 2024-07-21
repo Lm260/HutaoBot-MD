@@ -25,6 +25,8 @@ const txt = {
         command_error_executor: "*Ops! Algo deu errado e não foi possível concluir sua solicitação. Tente novamente mais tarde! 🙇‍♀️*",
     },
     
+    highTimestamp = "*Não é possível realizar o download de mídias com duração superior a uma hora. 🙅‍♀️*",
+    
     global_command_blocked: "*ESTE COMANDO ESTÁ GLOBALMENTE BLOQUEADO🙅‍♀️*",
     
     member_marked_everyone: "*Marca não fdp 😡 vai tirar o sossego de outro*",

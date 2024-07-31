@@ -1,15 +1,12 @@
 const fs = require('fs');
-const dbdir = 's0viet';
 
-function defineSave(db, obj, session) {
-     mine = db;
-     const dbdir = `./src/tictactoe/db/${session}.json`;
-     fs.writeFileSync(dbdir, JSON.stringify(obj, null, 2));
+function defineSave(obj, session) {
+     const base = `./src/tictactoe/db/${session}.json`;
+     fs.writeFileSync(base, JSON.stringify(obj, null, 2));
 }
 
 function setGame(session) {
      const matrix = [];
-     const dbdir = `./src/tictactoe/db/${session}.json`;
      if (!fs.existsSync(dbdir)) {
           matrix[0] = ["1️⃣", "2️⃣", "3️⃣"];
           matrix[1] = ["4️⃣", "5️⃣", "6️⃣"];
@@ -25,7 +22,7 @@ function setGame(session) {
                nine_push: [],
                _matrix: matrix
           };
-          defineSave(dbdir, objtic, session);
+          defineSave(objtic, session);
           return objtic;
      } else {
           const read = JSON.parse(fs.readFileSync(dbdir));
@@ -142,28 +139,28 @@ function move(x, y, sessionS) {
           moving.nine_push.push('⭕');
           moving.turn = 'X';
      }
-     defineSave(dbdir, moving, session);
+     defineSave(moving, session);
      if (horizontal(setGame(session)._matrix) == "❌" || horizontal(setGame(session)._matrix) == "⭕") {
           moving.isWin = true;
           moving.turn == 'X' ? moving.winner = "O" : moving.winner = "X";
-          defineSave(dbdir, moving, session);
+          defineSave(moving, session);
      } else if (vertical(setGame(session)._matrix) == "❌" || vertical(setGame(session)._matrix) == "⭕") {
           moving.isWin = true;
           moving.turn == 'X' ? moving.winner = "O" : moving.winner = "X";
-          defineSave(dbdir, moving, session);
+          defineSave(moving, session);
      } else if (diagonalLTR(setGame(session)._matrix) == "❌" || diagonalLTR(setGame(session)._matrix) == "⭕") {
           moving.isWin = true;
           moving.turn == 'X' ? moving.winner = "O" : moving.winner = "X";
-          defineSave(dbdir, moving, session);
+          defineSave(moving, session);
      } else if (diagonalRTL(setGame(session)._matrix) == "❌" || diagonalRTL(setGame(session)._matrix) == "⭕") {
           moving.isWin = true;
           moving.turn == 'X' ? moving.winner = "O" : moving.winner = "X";
-          defineSave(dbdir, moving, session);
+          defineSave(moving, session);
      } else if (moving.nine_push.length >= 9) {
           moving.isWin = true;
           moving.winner = "SERI";
      }
-     defineSave(dbdir, moving, session);
+     defineSave(moving, session);
      return moving;
 }
 

@@ -345,7 +345,6 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Listafake
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Listaban
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Revelar "viewOnce"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Revelarv2 "audioOnce"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Promover "@"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rebaixar "@"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}sh_num "5521"
@@ -661,7 +660,6 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎్మాై🎐 ${prefixo}Rankgay
 ┃╎్మాై🎐 ${prefixo}Rankcorno
 ┃╎్మాై🎐 ${prefixo}Ranknazista
-┃╎్మాై🎐 ${prefixo}Rankvirgem
 ┃╎్మాై🎐 ${prefixo}Rankpobre
 ┃╎్మాై🎐 ${prefixo}Rankrico
 ┃╎్మాై🎐 ${prefixo}Rankfeio

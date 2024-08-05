@@ -7,7 +7,8 @@ function defineSave(obj, session) {
 
 function setGame(session) {
      const matrix = [];
-     if (!fs.existsSync(dbdir)) {
+     const base = `./src/tictactoe/db/${session}.json`;
+     if (!fs.existsSync(base)) {
           matrix[0] = ["1️⃣", "2️⃣", "3️⃣"];
           matrix[1] = ["4️⃣", "5️⃣", "6️⃣"];
           matrix[2] = ["7️⃣", "8️⃣", "9️⃣"];
@@ -25,7 +26,7 @@ function setGame(session) {
           defineSave(objtic, session);
           return objtic;
      } else {
-          const read = JSON.parse(fs.readFileSync(dbdir));
+          const read = JSON.parse(fs.readFileSync(base));
           return read;
      }
 }

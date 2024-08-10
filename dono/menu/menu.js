@@ -328,9 +328,9 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ╰━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╯
 ┃╭━━━─────━━━╮
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ban "@"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Adverter "_@/quantidade_"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_adv "_@/quantidade ou all_"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rank_adv "_advertências_"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Adverter "_@|quantidade_"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_adv "_@|quantidade ou all_"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Lista_adv "_advertências_"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ver_adv "@"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ausente "texto"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ativo
@@ -343,7 +343,7 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Prefixos
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Add_palavra "palavrão"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_palavra "palavrão"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rg_aviso _hora/mensagem_
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rg_aviso
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_aviso
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Listanegra "55xxxx"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_list "55xxxx"

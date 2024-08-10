@@ -189,7 +189,6 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}ytmp4 "url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}ytmp3 "url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}Pinterest "txt"
-┃╎✰ۣۜۜ͜͡✨ ${prefixo}Pinterest2 "txt"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}Pinterest_video "url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}lyrics "txt"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}Shazam "marcar audio"
@@ -265,7 +264,6 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎ঔৣֳ᷌͜͡❄ ${prefixo}glomp
 ┃╎ঔৣֳ᷌͜͡❄ ${prefixo}slap
 ┃╎ঔৣֳ᷌͜͡❄ ${prefixo}kill
-┃╎ঔৣֳ᷌͜͡❄ ${prefixo}kick
 ┃╎ঔৣֳ᷌͜͡❄ ${prefixo}happy
 ┃╎ঔৣֳ᷌͜͡❄ ${prefixo}wink
 ┃╎ঔৣֳ᷌͜͡❄ ${prefixo}poke

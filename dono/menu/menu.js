@@ -140,7 +140,6 @@ return `╭━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╮
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Afk "texto"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Suicidio (❗)
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Falar pt "txt"
-┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Gitdobot
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Nick "Seu nick"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Conselho
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Rankativo

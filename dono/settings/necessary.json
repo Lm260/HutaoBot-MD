@@ -5,6 +5,8 @@
 	"antipv2": false,
 	"antipv3": false,
 	"Desligar_Bot": false,
+	"DeleteMessages": true,
+	"Aluguel_Global": false,
 	"anticall": false,
 	"console_off": true,
 	"listanegra_global": [],
@@ -38,7 +40,7 @@
 		"figroblox",
 		"figengracada"
 	],
-	"Aluguel_Global": false,
+	"LimitCommand": "*❗Espere #tempo# segundos até executar o próximo comando, timestamp:*\n\n • #tempocmd# ⏱️",
 	"msganticall": "Você não tem permissão de me ligar",
     "msgantipv2": "*No momento não estou disponível para privados 🙇‍♀️*",
 	"msgantipv": "*Meu privado está indisponível para intrusos. 😡*"

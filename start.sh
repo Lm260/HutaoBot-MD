@@ -14,7 +14,7 @@ defaultStart() {
 
 while :
 do
-  echo -e "\033[1;33mINICIANDO HUTAO BOT V6.5.2 ^-^ \n AGUARDE UM MOMENTO...🌸\033[0m"
+  echo -e "\033[1;33mINICIANDO HUTAO BOT V7.0 ^-^ \n AGUARDE UM MOMENTO...🌸\033[0m"
   if [ "$1" = "cd" ]; then
     startWithCode
   elif [ "$1" = "qr" ]; then

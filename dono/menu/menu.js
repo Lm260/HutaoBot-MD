@@ -386,7 +386,6 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎ঔৣ͜͡💧 ${prefixo}Closegp
 ┃╎ঔৣ͜͡💧 ${prefixo}Time-status
 ┃╎ঔৣ͜͡💧 ${prefixo}Rm_opengp
-┃╎ঔৣ͜͡💧 ${prefixo}Clean_couter
 ┃╎ঔৣ͜͡💧 ${prefixo}Bemvindo
 ┃╎ঔৣ͜͡💧 ${prefixo}Bemvindo2
 ┃╎ঔৣ͜͡💧 ${prefixo}infobv
@@ -470,6 +469,8 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Numero_dono 
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Configurarbot
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}StatusBot
+┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Zerar_Rank
+┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Limpar_Contador
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Add_prefixo
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Rm_prefixo
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Ausente "_motivo_"

@@ -128,6 +128,8 @@ return `╭━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╮
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Traduzir _pt/hi_
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Wame "_texto_ou_n_"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}playstore "_nome do apk_"
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Apr
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Digit
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Celular "iphone 13"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Signo "virgem"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}tagme
@@ -361,6 +363,7 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Sorteiogold
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Resetvelha
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Regras
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Papof
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rv_forca 
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Revelar_anagrama 
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Revelar_gartic 

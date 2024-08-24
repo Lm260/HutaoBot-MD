@@ -44,6 +44,7 @@ return `╭━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╮
 ┃╎✧͜͡ 🌷 ${prefixo}configurarbot
 ┃╎✧͜͡ 🌷 ${prefixo}listacmd
 ┃╎✧͜͡ 🌷 ${prefixo}infobot
+┃╎✧͜͡ 🌷 ${prefixo}Idiomas
 ┃╎✧͜͡ 🌷 ${prefixo}infobv
 ┃╎✧͜͡ 🌷 ${prefixo}infodono
 ┃╎✧͜͡ 🌷 ${prefixo}InfoClosegp
@@ -133,6 +134,8 @@ return `╭━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╮
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Celular "iphone 13"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Signo "virgem"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}tagme
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Cantadas
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Fatos
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Moedas
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}status
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Contar "texto/marcar"
@@ -358,6 +361,8 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Totag
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Hidetag "texto"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Marcar
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Marcar2
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}MarcarWa
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Atividades
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}MsgAdm "texto"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Sorteiogold
@@ -471,6 +476,7 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}StatusBot
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Zerar_Rank
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Limpar_Contador
+┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Tirar_Counter
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Add_prefixo
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Rm_prefixo
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Ausente "_motivo_"

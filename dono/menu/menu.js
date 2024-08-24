@@ -474,6 +474,7 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Numero_dono 
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Configurarbot
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}StatusBot
+┃╎✰ۣۜۜ͜͡🩸 ${prefixo}temporizador
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Zerar_Rank
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Limpar_Contador
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Tirar_Counter

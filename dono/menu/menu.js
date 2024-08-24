@@ -474,7 +474,7 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Numero_dono 
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Configurarbot
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}StatusBot
-┃╎✰ۣۜۜ͜͡🩸 ${prefixo}temporizador
+┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Temporizador
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Zerar_Rank
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Limpar_Contador
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Tirar_Counter
@@ -645,8 +645,11 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Gay
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Puta
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Tapa
-┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Beijo 
-┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Abraçar
+┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Beijo
+┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Louça 
+┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Carinho
+┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Comer
+┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Abraço
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Matar 
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Gado
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Chute

@@ -422,6 +422,7 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎ঔৣ͜͡🀄 ${prefixo}Status
 ┃╎ঔৣ͜͡🀄 ${prefixo}Antilink
 ┃╎ঔৣ͜͡🀄 ${prefixo}Advlink
+┃╎ঔৣ͜͡🀄 ${prefixo}AntiBots
 ┃╎ঔৣ͜͡🀄 ${prefixo}AntiMarcar
 ┃╎ঔৣ͜͡🀄 ${prefixo}Antilinkgp 
 ┃╎ঔৣ͜͡🀄 ${prefixo}Advlinkgp

@@ -31,6 +31,8 @@ const txt = {
     
     member_marked_everyone: "*Marca não fdp 😡 vai tirar o sossego de outro*",
     
+    Anti_Bot: "*NÃO É PERMITIDO OUTROS BOTS AQUI!! 😠*",
+    
     antilink_group: "*SEM LINKS DE GRUPO AQUI😡🗡*",
     
     anti_sticker: "*FIGURINHAS É PROIBIDO AQUI🚫*",

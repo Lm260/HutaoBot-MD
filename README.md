@@ -35,26 +35,26 @@
 ````bash
 termux-change-repo
 ````
-> **Aviso*** Aperte em OK, Após escolha a opção "Mirros By Grimler".
+> **Aviso*** Aperte em OK, Escolha a opção "Mirrors By Grimler" e pressione OK novamente!
 ------------------
 2 - COMANDO: 🌸
 ````bash
 pkg upgrade-y && pkg update -y
 ````
+> **Atenção**!!!
+> Se aparecer "(Y/I/N/O/D/Z) [default=N] ?", use Y e após Enter ou pular linha no seu teclado.
 3 - COMANDO: 🌸
 ````bash
 pkg install -y ffmpeg nodejs-lts wget tesseract git && termux-setup-storage
 ````
-> **Atenção**!!!
-> Se aparecer "(Y/I/N/O/D/Z) [default=N] ?", use Y e após Enter.
 ------------------
 4 - COMANDO: 🌸
 ````bash
-cd /sdcard && git clone https://github.com/Lm260/HutaoBot-MD
+cd /sdcard && git clone https://github.com/Lm260/HutaoBot-MD.git
 ````
 5 - COMANDO: 🌸
 ````bash
-cd /sdcard/hutaoBot-MD && npm start
+cd /sdcard/HutaoBot-MD && npm start
 ````
 > Use-o para toda vez que for ligar o bot!
 ------------------

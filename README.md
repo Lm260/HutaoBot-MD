@@ -43,11 +43,11 @@ pkg upgrade-y && pkg update -y
 ````
 > **Atenção**!!!
 > Se aparecer "(Y/I/N/O/D/Z) [default=N] ?", use Y e após Enter ou pular linha no seu teclado.
+------------------
 3 - COMANDO: 🌸
 ````bash
 pkg install -y ffmpeg nodejs-lts wget tesseract git && termux-setup-storage
 ````
-------------------
 4 - COMANDO: 🌸
 ````bash
 cd /sdcard && git clone https://github.com/Lm260/HutaoBot-MD.git

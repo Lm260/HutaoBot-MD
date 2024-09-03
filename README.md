@@ -17,6 +17,7 @@
 <div align="center">
   
 [![WhatsApp](https://img.shields.io/badge/Suporte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/HKWhghQB6dnHe56JOZlikb)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/lm_only_)
 </div>
 
 # INSTALAÇÃO PELO TERMUX

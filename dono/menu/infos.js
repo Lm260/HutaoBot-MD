@@ -195,14 +195,13 @@ Espero ter ajudado!! 🙇‍♀️`;
 
 const infocontador = (prefixo, sender, NomeDoBot) => {
 return`
-Olá ${pushname} - 
 
-Se você está lendo isso é porque está curioso(a) sobre o contador de mensagem de grupos. 
+• Se você está lendo isso é porque está curioso(a) sobre o contador de mensagem de grupos. 
 
 contém alguns comandos
 
 -
-(1) ${prefix}rankativos
+(1) ${prefixo}rankativos
 
 (Descrição: Ele mostra os tops 5 com mais mensagem e comandos executados do bot, no grupo, mas essas mensagem, apenas serão contadas se o bot estiver ativo no termux, ele vai armazenar os dados de cada um que enviar mensagem.) 
  -      -      -       -       -       - 

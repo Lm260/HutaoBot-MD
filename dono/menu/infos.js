@@ -98,7 +98,7 @@ return `
 ┃╎ Hii!! @${sender.split('@')[0]} ฅ^•ﻌ•^ฅ
 ┃╎᭪➣ Prefixo: 〘 ${prefixo} 〙
 ┃╎᭪➣ Nome do bot: ${NomeDoBot}
-┃╎᭪➣ Versão do bot: 7.0.4
+┃╎᭪➣ Versão do bot: 7.0.6
 ┃╎᭪➣ Baileys version: 6.7.7
 ┃╎᭪➣ Tema: Hutao / Genshin Impact〘 Game 〙
 ┃╎᭪➣ Dono: ${NickDono}
@@ -126,6 +126,7 @@ return `‎*⏤͟͟͞͞Aqui estão os principais comandos para configurar seu bo
    ↳ [  *${prefixo}Prefixo* !  ]
 ${"─".repeat(20)}
 
+
 『2』 ↴
 -
   ░⃟⃛ ➮ *${prefixo}NickBot* ↴
@@ -136,6 +137,7 @@ ${"─".repeat(20)}
    ↳ [  *${prefixo}NickBot* _Novo Nick_  ]
 ${"─".repeat(20)}
 
+
 『3』 ↴
 -
   ░⃟⃛ ➮ *${prefixo}NickDono* ↴
@@ -143,8 +145,9 @@ ${"─".repeat(20)}
   ➥ _Defina seu nome como dono do bot_
 
    • Exemplo:
-   ↳ [  *${prefixo}Nickdono* _Novo Nome_  ]
+   ↳ [  *${prefixo}NickDono* _Novo Nome_  ]
 ${"─".repeat(20)}
+
 
 『4』 ↴
 -
@@ -153,8 +156,9 @@ ${"─".repeat(20)}
   ➥ _Este comando é essencial para que comandos de dono seja executado. Obs: ( O número deve ser sem +, (), e espaços ) 
 
    • Exemplo:
-   ↳ [  *${prefixo}Numero_dono* 551122334455  ]
+   ↳ [  *${prefixo}Numero_Dono* 551122334455  ]
 ${"─".repeat(20)}
+
 
 『5』 ↴
 -
@@ -165,6 +169,7 @@ ${"─".repeat(20)}
    • Exemplo:
    ↳ [  *${prefixo}NomeBot* _Novo Nome_  ]
 ${"─".repeat(20)}
+
 
 • ❗ Para saber mais sobre os comandos de dono use: *${prefixo}MenuDono* ❗
 `;
@@ -242,13 +247,13 @@ _Há um comando para administração e outro para lideres do bot_
 
     *Uso dos comandos para a administração*
     
-  • *${prefixo}listanegra*
+  • *${prefixo}ListaNegra*
   ( Você pode mencionar a mensagem da pessoa ou digitar o número dela por exemplo ${prefixo}listanegra ${sender.split('@')[0]} )
   
-  • *${prefixo}tirardalista*
+  • *${prefixo}TirarDaLista*
   ( Mesmo processo mencionado acima... Mencione a mensagem ou digite o número sem espaços )
   
-  • *${prefixo}listban* _lista de números_
+  • *${prefixo}ListBan* _lista de números_
   ( Este é onde está todos os números registrados na lista negra, é util para você  que deseja remover um número da lista usando ${prefixo}tirardalista )
   
    
@@ -260,11 +265,11 @@ _Há um comando para administração e outro para lideres do bot_
   
   • É basicamente o mesmo processo da listanegra acima, porém esta remove usuarios de todos os grupos que o *bot tem adm*
   
-  • *${prefixo}listg_global*
+  • *${prefixo}ListaNegraG*
   ( Mencione a mensagem, "@" ou digite apenas o número sem espaços )
   
-  • *${prefixo}delistg_global*
-  ( Para remover um número da listanegra global, use *${prefixo}listbang* )
+  • *${prefixo}TirarDaListaG*
+  ( Para remover um número da listanegra global, use *${prefixo}ListBanG* )
   
 Bot: ${NomeDoBot}
 `;

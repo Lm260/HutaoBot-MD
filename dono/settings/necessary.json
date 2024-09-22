@@ -3,6 +3,7 @@
 	"autoread": false,
 	"antipv1": false,
 	"antipv2": false,
+    "buttons": true,
 	"antipv3": false,
 	"Desligar_Bot": false,
 	"DeleteMessages": true,

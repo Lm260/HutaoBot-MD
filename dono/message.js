@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Aqui você pode editar mensagems do bot a vontade!
  * Muita atenção ao mexer em algo, para não dar problema depois.

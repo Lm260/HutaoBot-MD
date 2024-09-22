@@ -59,22 +59,24 @@ return `╭━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╮
 ┝⋆⃟ۣۜ᭪➣ 𖡦 𝐏𝐄𝐒𝐆𝐔𝐈𝐒𝐀 【🔍】
 ╰━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╯
 ┃╭━━━─────━━━╮
-┃╎్మాై🕋 ${prefixo}Gemini 
-┃╎్మాై🕋 ${prefixo}CriarImg
+┃╎్మాై🕋 ${prefixo}Gemini "pesquisa"
+┃╎్మాై🕋 ${prefixo}Gpt "pesquisa"
+┃╎్మాై🕋 ${prefixo}YtStalk _@usuario
+┃╎్మాై🕋 ${prefixo}Tiktok_Stalker _@usuario
+┃╎్మాై🕋 ${prefixo}Piterest "titulo"
+┃╎్మాై🕋 ${prefixo}Letra "Lyrics da música"
+┃╎్మాై🕋 ${prefixo}Dicionário "palavra"
+┃╎్మాై🕋 ${prefixo}CriarImg 
 ┃╎్మాై🕋 ${prefixo}Npm
 ┃╎్మాై🕋 ${prefixo}BingImg
-┃╎్మాై🕋 ${prefixo}Gpt "txt"
-┃╎్మాై🕋 ${prefixo}Piterest "txt"
 ┃╎్మాై🕋 ${prefixo}noticias
 ┃╎్మాై🕋 ${prefixo}Terra
 ┃╎్మాై🕋 ${prefixo}buscar "txt"
 ┃╎్మాై🕋 ${prefixo}amazon "txt"
 ┃╎్మాై🕋 ${prefixo}noticiaesp "txt"
-┃╎్మాై🕋 ${prefixo}letra "ela me traiu"
 ┃╎్మాై🕋 ${prefixo}wiki "txt"
 ┃╎్మాై🕋 ${prefixo}Book "txt"
 ┃╎్మాై🕋 ${prefixo}clima "bahia"
-┃╎్మాై🕋 ${prefixo}Dicionário "_Palavra_"
 ┃╎్మాై🕋 ${prefixo}filme "movie"
 ┃╎్మాై🕋 ${prefixo}serie "txt"
 ┃╎్మాై🕋 ${prefixo}instauser "Alok"
@@ -119,13 +121,13 @@ return `╭━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╮
 ┝⋆⃟ۣۜ᭪➣ 𖡦 𝐌𝐄𝐌𝐁𝐄𝐑𝐒 【✨】
 ╰━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╯
 ┃╭━━━─────━━━╮
-┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Perfil
-┃╎✰ۣۜۜ͜͡🧉 ${prefixo}HD 
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Perfil "seu perfil"
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}HD "marcar imagem"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Simi "Fale algo"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Printsite "_Url_"
-┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Totext _audio/video_
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Totext "marcar audio / video"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Traduzir _pt/hi_
-┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Wame "_texto ou n_"
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Wame "_texto ou não_"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}playstore "_nome do apk_"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Apr
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Digit
@@ -148,7 +150,7 @@ return `╭━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╮
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Rankativo
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Rankinativo
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}Me
-┃╎✰ۣۜۜ͜͡🧉 ${prefixo}check "@/usuario"
+┃╎✰ۣۜۜ͜͡🧉 ${prefixo}check "@usuario"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}admins
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}bug "texto"
 ┃╎✰ۣۜۜ͜͡🧉 ${prefixo}avalie "1/10"
@@ -184,6 +186,8 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}playdoc "txt/url" 
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}play_audio "txt/url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}play_video "txt/url"
+┃╎✰ۣۜۜ͜͡✨ ${prefixo}Threads_Video "url do video"
+┃╎✰ۣۜۜ͜͡✨ ${prefixo}Threads_Audio "url do video"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}Spotify "url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}ytbuscar "txt/url"
 ┃╎✰ۣۜۜ͜͡✨ ${prefixo}ytmp4 "url"
@@ -328,18 +332,18 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ╰━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╯
 ┃╭━━━─────━━━╮
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ban "@"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Adverter "_@|quantidade_"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_adv "_@|quantidade ou all_"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Adverter "_@pessoa_"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_adv "_@pessoa_"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Lista_adv "_advertências_"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ver_adv "@"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ausente "texto"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ativo
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ver_adv "@pessoa"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ausente "texto de ausência"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ativo "volta da ausência"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Anotar "texto"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Anotações
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}rmnota "nota"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Banghost (❗)
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}mute "@"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}desmute "@"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}mute "@pessoa"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}desmute "@pessoa"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Prefixos
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Add_palavra "palavrão"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_palavra "palavrão"
@@ -357,9 +361,9 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Sorteio
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Sorteio2
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Sortear
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Totag
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Totag "mensagem"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Hidetag "texto"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Marcar
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Marcar "marca membros"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Marcar2
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}MarcarWa
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Atividades
@@ -384,10 +388,8 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╭━━━─────━━━╮
 ┃╎ঔৣ͜͡💧 ${prefixo}Gp a/f
 ┃╎ঔৣ͜͡💧 ${prefixo}TempoCmd _segundos_
-┃╎ঔৣ͜͡💧 ${prefixo}Fechargp "1 m"
-┃╎ঔৣ͜͡💧 ${prefixo}Abrirgp "1 m"
-┃╎ঔৣ͜͡💧 ${prefixo}Opengp 
-┃╎ঔৣ͜͡💧 ${prefixo}Closegp
+┃╎ঔৣ͜͡💧 ${prefixo}Opengp "06:00"
+┃╎ঔৣ͜͡💧 ${prefixo}Closegp "22:00"
 ┃╎ঔৣ͜͡💧 ${prefixo}Time-status
 ┃╎ঔৣ͜͡💧 ${prefixo}Rm_opengp
 ┃╎ঔৣ͜͡💧 ${prefixo}Bemvindo
@@ -418,6 +420,7 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┝⋆⃟ۣۜ᭪➣ 𖡦 𝗔𝗧𝗜𝗩𝗔𝗖̧𝗢̃𝗘𝗦 【🔥】
 ╰━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╯
 ┃╭━━━─────━━━╮
+┃╎ঔৣ͜͡🀄 ${prefixo}Ativações
 ┃╎ঔৣ͜͡🀄 ${prefixo}Status
 ┃╎ঔৣ͜͡🀄 ${prefixo}Antilink
 ┃╎ঔৣ͜͡🀄 ${prefixo}Advlink
@@ -505,8 +508,10 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Unblock "@"
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Blockcmd 
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Unblockcmd
+┃╎✰ۣۜۜ͜͡🩸 ${prefixo}ListaCmdBlock
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Blockcmdg
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Unblockcmdg
+┃╎✰ۣۜۜ͜͡🩸 ${prefixo}ListaCmdG
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Reiniciar
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Seradm
 ┃╎✰ۣۜۜ͜͡🩸 ${prefixo}Sermembro
@@ -640,6 +645,7 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┝⋆⃟ۣۜ᭪➣ 𖡦 𝐌𝐀𝐑𝐂𝐀𝐑/𝐏𝐄𝐒𝐒𝐎𝐀𝐋 【✨】
 ╰━✰°❀•°✮•| ⪧✿⊰ |•✮°•❀°✰━╯
 ┃╭━━━─────━━━╮
+┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Personalidade
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Linda
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Lindo 
 ┃╎☆ۣۜۜ͜͡🍹 ${prefixo}Gay

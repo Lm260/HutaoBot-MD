@@ -1,6 +1,6 @@
 
 
-const tools = {
+module.exports = {
     typeC: [
         "Você é a raiz quadrada de dois? Porque eu me sinto irracional ao seu redor.",
         "Você está viajando na velocidade da luz? Porque o tempo parece sempre parar quando olho para você.",
@@ -362,5 +362,3 @@ const tools = {
         return this.typeF[Math.floor(Math.random() * this.typeF.length)];
     }
 };
-
-module.exports = tools;

@@ -347,8 +347,8 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_palavra "palavrão"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rg_aviso
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_aviso
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Listanegra "55xxxx"
-┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_list "55xxxx"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}ListaNegra "55xxxx"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}TirarDaLista "55xxxx"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Listafake
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Listaban
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Revelar "viewOnce"
@@ -546,8 +546,9 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎✰ۣۜۜ͜͡♨️ ${prefixo}Entrar "_link grupo_"
 ┃╎✰ۣۜۜ͜͡♨️ ${prefixo}Add "55xxx"
 ┃╎✰ۣۜۜ͜͡♨️ ${prefixo}Reviver "_marcar mensagem_"
-┃╎✰ۣۜۜ͜͡♨️ ${prefixo}listg_global 
-┃╎✰ۣۜۜ͜͡♨️ ${prefixo}Rm_listg
+┃╎✰ۣۜۜ͜͡♨️ ${prefixo}ListaNegraG 
+┃╎✰ۣۜۜ͜͡♨️ ${prefixo}TirarDaListaG
+┃╎✰ۣۜۜ͜͡♨️ ${prefixo}ListaBanG
 ┃╎✰ۣۜۜ͜͡♨️ ${prefixo}rgtm
 ┃╎✰ۣۜۜ͜͡♨️ ${prefixo}Banghost
 ┃╎✰ۣۜۜ͜͡♨️ ${prefixo}transmitir
@@ -703,8 +704,6 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎ঔৣֳ᷌᷈͜͡🎲 ${prefixo}Minerar
 ┃╎ঔৣֳ᷌᷈͜͡🎲 ${prefixo}Forca "solo/global"
 ┃╎ঔৣֳ᷌᷈͜͡🎲 ${prefixo}r-f
-┃╎ঔৣֳ᷌᷈͜͡🎲 ${prefixo}Add_uder 
-┃╎ঔৣֳ᷌᷈͜͡🎲 ${prefixo}Del_user
 ┃╎ঔৣֳ᷌᷈͜͡🎲 ${prefixo}Enigna
 ┃╎ঔৣֳ᷌᷈͜͡🎲 ${prefixo}Revelar_enigma 
 ┃╎ঔৣֳ᷌᷈͜͡🎲 ${prefixo}Anagrama

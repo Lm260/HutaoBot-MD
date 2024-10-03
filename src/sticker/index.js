@@ -1,10 +1,8 @@
-let repository = "https://github.com/badDevelopper/figus2/raw/main/";
-
-let num;
+const repository = "https://github.com/badDevelopper/figus2/raw/main/";
 
 module.exports = {
     getStickerRandom(folderName, amount) {
-        num = Math.floor(Math.random() * amount) + 1;
+        const num = Math.floor(Math.random() * amount) + 1;
         return `${repository}${folderName}/${num}.webp`;
     },
     anime() {

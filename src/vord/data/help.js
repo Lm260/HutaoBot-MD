@@ -1,4 +1,5 @@
-const help = (prefixo, NomeDoBot) => {
+module.exports = {
+help(prefixo, NomeDoBot) {
     return `✨ 𝚅𝙴𝚁𝙳𝙰𝙳𝙴 𝙾𝚄 𝙳𝙴𝚂𝙰𝙵𝙸𝙾 🗡
     
     𝐀𝐪𝐮𝐢 𝐞𝐬𝐭𝐚̃𝐨 𝐚𝐥𝐠𝐮𝐦𝐚𝐬 𝐢𝐧𝐟𝐨𝐫𝐦𝐚𝐜̧𝐨̃𝐞𝐬 𝐬𝐨𝐛𝐫𝐞 𝐨 𝐠𝐚𝐦𝐞 ↴
@@ -66,9 +67,8 @@ By: 𝐿𝑚 🥀
 Bot: ${NomeDoBot}
 
 ✰ ✰ ✰ ✰ ✰`;
-};
-
-const rules = (prefixo, NomeDoBot) => {
+},
+rules(prefixo, NomeDoBot) {
     return `✨ 𝚅𝙴𝚁𝙳𝙰𝙳𝙴 𝙾𝚄 𝙳𝙴𝚂𝙰𝙵𝙸𝙾 🗡
     
     𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐚𝐢𝐬 𝐫𝐞𝐠𝐫𝐚𝐬 𝐝𝐨 𝐠𝐚𝐦𝐞 ↴
@@ -89,10 +89,5 @@ By: 𝐿𝑚 🥀
 Bot: ${NomeDoBot}
 
 ✰ ✰ ✰ ✰ ✰`;
+}
 };
-
-module.exports = { rules, help };
-    
-    
-    
-    

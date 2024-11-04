@@ -1,0 +1,18 @@
+{
+  "name": "ytgeturl",
+  "version": "2.0.0",
+  "description": "YouTube downloader in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "LM ONLY",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "qs": "^6.13.0"
+  }
+}

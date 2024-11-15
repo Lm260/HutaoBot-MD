@@ -1,0 +1,32 @@
+{
+  "name": "fastgenyt",
+  "version": "2.0.0",
+  "description": "FastGenYT - Fast Youtube DownLoad for NodeJS.",
+  "main": "fastgenyt.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lm260/fastgenyt.git"
+  },
+  "keywords": [
+    "fast",
+    "youtube",
+    "download"
+  ],
+  "author": "Lm Only",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lm260/fastgenyt/issues"
+  },
+  "homepage": "https://github.com/Lm260/fastgenyt#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "undici": "^6.21.0"
+  }
+}

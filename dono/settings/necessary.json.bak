@@ -5,7 +5,7 @@
 	"antipv2": false,
     "buttons": true,
 	"antipv3": false,
-	"Desligar_Bot": true,
+	"Desligar_Bot": false,
 	"DeleteMessages": true,
 	"Aluguel_Global": false,
 	"anticall": false,

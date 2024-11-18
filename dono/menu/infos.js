@@ -96,12 +96,12 @@ return `
 ┃╎ Hii!! @${sender.split('@')[0]} ฅ^•ﻌ•^ฅ
 ┃╎᭪➣ Prefixo: 〘 ${prefixo} 〙
 ┃╎᭪➣ Nome do bot: ${NomeDoBot}
-┃╎᭪➣ Versão do bot: 7.5.0
+┃╎᭪➣ Versão do bot: 7.5.2
 ┃╎᭪➣ Baileys version: 6.7.8
 ┃╎᭪➣ Tema: Hutao / Genshin Impact〘 Game 〙
 ┃╎᭪➣ Dono: ${NickDono}
 ┃╎᭪➣ Numero do dono: ${NumeroDoDono}
-┃╎᭪➣ Criador: 𝐿𝑚 🥀
+┃╎᭪➣ Criador: 𝐿𝑚 🥀 | 559284828701
 ┃╎ ✫✫✫✫✫
 ┃╰━━─ ≪ •❈• ≫ ─━━╯
 ╰━━━✰°❀•°✮°•❀°✾✰━━━╯

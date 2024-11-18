@@ -24,7 +24,7 @@
   },
   "name": "HutaoBot-MD",
   "description": "Hutao Bot, desenvolvida para oferecer melhor conexão, segurança e desempenho. Qualquer duvida, me chame no Whatsapp: +559284828701",
-  "version": "7.5.0",
+  "version": "7.5.2",
   "scripts": {
     "start": "ulimit -c 0 && bash start.sh",
     "test": "node connect.js"
@@ -38,7 +38,7 @@
     "baileys",
     "bot"
   ],
-  "author": "Lm260",
+  "author": "Lm Only",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Lm260/hutaoBot-MD/issues"

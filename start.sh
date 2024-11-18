@@ -1,15 +1,15 @@
 #!/bin/bash
 
 startWithCode() {
-  node --trace-warnings connect.js cd
+  NODE_ENV=production node --no-warnings connect.js cd
 }
 
 startWithQr() {
-  node --trace-warnings connect.js qr
+  NODE_ENV=production node --no-warnings connect.js qr
 }
 
 defaultStart() {
-  node --trace-warnings connect.js
+  NODE_ENV=production node --no-warnings connect.js
 }
 
 while :

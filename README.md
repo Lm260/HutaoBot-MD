@@ -1,8 +1,8 @@
-<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=836FFF&center=falso&vCenter=falso&lines=𝑯𝒖𝒕𝒂𝒐𝑩𝒐𝒕-𝑴𝑫+✿+V7.5✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;✰✰✰✰✰">      
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=836FFF&center=falso&vCenter=falso&lines=𝑯𝒖𝒕𝒂𝒐𝑩𝒐𝒕-𝑴𝑫+✿+V7.5.2✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;✰✰✰✰✰">      
 
 <h1 align="center">
 <p>
-<img src= "https://xatimg.com/image/Y4g1COu5OEfA.jpg" alt="HUTAO-BOT V7.5✓" width="720">
+<img src= "https://xatimg.com/image/Y4g1COu5OEfA.jpg" alt="HUTAO-BOT V7.5.2✓" width="720">
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@
 
 <p align="center">
 <img title="Autor" src="https://img.shields.io/badge/Autor-@Lm-orange.svg?style=for-the-badge&logo=github"></a>
-<img title="Versão" src="https://img.shields.io/badge/Versão-7.5-orange.svg?style=for-the-badge&logo=github"></a>
+<img title="Versão" src="https://img.shields.io/badge/Versão-7.5.2-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 
 <div align="center">
@@ -20,7 +20,13 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/lm_only_)
 </div>
 
-# INSTALAÇÃO PELO TERMUX
+## ARQUIVO ZIP 
+
+Você pode baixar o arquivo e descompacta-lo depois. [Baixar](https://github.com/Lm260/HutaoBot-MD/archive/refs/heads/main.zip)
+> Está opção é somente se você já estiver tudo instalado no termux
+------------------
+
+## INSTALAÇÃO PELO TERMUX (recomendado)
 
 **Caso Não tenha o termux instalado**
 [Instale aqui](https://www.mediafire.com/file/0npdmv51pnttps0/com.termux_0.119.1-119_minAPI21(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk/file).
@@ -59,3 +65,18 @@ cd /sdcard/HutaoBot-MD && npm start
 ````
 > Use-o para toda vez que for ligar o bot!
 ------------------
+
+## Contributors
+
+* [__Canal__](https://whatsapp.com/channel/0029ValLKgUAO7RCUU0dO03k)
+
+## Features
+
+- **Desempenho:** Projeto focado em rapidez e baixo consumo de recursos. Com uma source altamente projetada para evitar consumo excessivo de CPU e memória;
+- **Comandos:** HutaoBot-MD contém todos os comando 100% gratuitos e funcionais. Algums podem apresentar falhas, mas iremos corrigir o mais rápido possível;
+- **Uso:** Fácil de usar, e rápida em processo de dados.
+
+## License
+
+Licensed under [MIT](./LICENSE).
+Todos os direitos reservados.

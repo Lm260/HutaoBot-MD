@@ -6,19 +6,19 @@
  */
 
 const txt = {
-    Owner: "*SOMENTE MEU DONO PODE USAR ESTE COMANDO. 😼*",
+    Owner: "*SOMENTE MEU `DONO` PODE USAR ESTE COMANDO. 😼*",
     
-    only_leaders: "*SOMENTE MEUS LÍDERES PODEM EXECUTAR ESTE COMANDO. 😼*",
+    only_leaders: "*SOMENTE MEUS `LÍDERES` PODEM EXECUTAR ESTE COMANDO. 😼*",
     
-    only_adm: "*SOMENTE ADMS PODE EXECUTAR ESTE COMANDO. 😼*",
+    only_adm: "*SOMENTE `ADMS` PODE EXECUTAR ESTE COMANDO. 😼*",
     
-    only_vip: "*ESTE COMANDO É EXCLUSIVO SOMENTE PARA OS VIP. 🍸💸*",
+    only_vip: "*ESTE COMANDO É EXCLUSIVO SOMENTE PARA OS `VIP`. 🍸💸*",
     
-    only_group: "*ESTE COMANDO É SOMENTE PARA GRUPOS. 🙇‍♀️*",
+    only_group: "*ESTE COMANDO É SOMENTE PARA `GRUPOS`. 🙇‍♀️*",
     
     isBotAdm: "*Eu presciso ser ADM do grupo* 🥺",
     
-    command_blocked: "*ESTE COMANDO ESTÁ BLOQUEADO 🙅‍♀️*",
+    command_blocked: "*ESTE COMANDO ESTÁ `BLOQUEADO` 🙅‍♀️*",
     
     erros: {
         api_error: "*A api caiu ou não foi possível executar este comando!😿*",
@@ -28,7 +28,7 @@ const txt = {
     
     highTimestamp: "*Não é possível realizar o download de mídias com duração superior a uma hora. 🙅‍♀️*",
     
-    global_command_blocked: "*ESTE COMANDO ESTÁ GLOBALMENTE BLOQUEADO🙅‍♀️*",
+    global_command_blocked: "*ESTE COMANDO ESTÁ GLOBALMENTE `BLOQUEADO` 🙅‍♀️*",
     
     member_marked_everyone: "*Marca não fdp 😡 vai tirar o sossego de outro*",
     

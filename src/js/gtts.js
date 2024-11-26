@@ -5,9 +5,10 @@
  * Atualizado por Lm Only
  * Função Aprimorada
  */
-const request = require('request');
-const escapeStringRegexp = require('escape-string-regexp');
-const { createWriteStream } = require('fs');
+const { request } = require('undici');
+const {
+    createWriteStream
+} = require('fs');
 
 const BASE_URL = 'http://translate.google.com/translate_tts';
 const MAX_CHARS = 100;
@@ -100,8 +101,10 @@ function Text2Speech(_lang) {
 function save(getArgs, filepath, text, callback) {
     const textParts = tokenize(text);
     const total = textParts.length;
-    const { eachSeries } = require('async');
-    eachSeries(textParts, (part, cb) => {
+    const {
+        eachSeries
+    } = require('async');
+    eachSeries(textParts, async (part, cb) => {
         const index = textParts.indexOf(part);
         const headers = getHeader();
         const args = getArgs(part, index, total);
@@ -111,8 +114,14 @@ function save(getArgs, filepath, text, callback) {
             flags: index > 0 ? 'a' : 'w'
         });
 
-        request({ uri: fullUrl, headers, method: 'GET' })
-            .pipe(writeStream);
+        const {
+            body
+        } = await request(fullUrl, {
+            method: 'GET',
+            headers
+        });
+
+        body.pipe(writeStream);
 
         writeStream.on('finish', cb);
         writeStream.on('error', cb);
@@ -135,7 +144,14 @@ function stream(getArgs, text) {
         const args = getArgs(part, index, total);
         const fullUrl = BASE_URL + args;
 
-        return request({ uri: fullUrl, headers, method: 'GET' });
+        return async () => {
+            const { body } = await request(fullUrl, {
+                method: 'GET',
+                headers
+            });
+
+            return body;
+        };
     }));
 }
 
@@ -170,7 +186,7 @@ function getArgsFactory(lang) {
  */
 function tokenize(text) {
     if (!text) throw new Error('No text to speak');
-
+    const escapeStringRegexp = require('escape-string-regexp');
     const punc = '¡!()[]¶;|°•—«»≤≥«»‹›\n ';
     const puncList = punc.split('').map(char => escapeStringRegexp(char));
     const pattern = puncList.join('|');
@@ -194,7 +210,7 @@ function tokenize(text) {
     if (output[0]) {
         output[0] = output[0].substr(1); // Remove o primeiro caractere se existir
     }
-    
+
     return output;
 }
 
@@ -204,8 +220,12 @@ function tokenize(text) {
  * @param {Number} port - Porta para o servidor
  */
 function createServerOn(getArgs, port) {
-    const { createServer } = require("http");
-    const { parse } = require('url');
+    const {
+        createServer
+    } = require("http");
+    const {
+        parse
+    } = require('url');
 
     const server = createServer((req, res) => {
         const queryData = parse(req.url, true).query;
@@ -216,11 +236,15 @@ function createServerOn(getArgs, port) {
         }
 
         if (queryData.text) {
-            res.writeHead(200, { 'Content-Type': 'audio/mpeg' });
+            res.writeHead(200, {
+                'Content-Type': 'audio/mpeg'
+            });
             stream(argsCallback, queryData.text).pipe(res);
         } else {
             console.log(req.headers);
-            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.writeHead(200, {
+                'Content-Type': 'application/json'
+            });
             res.end(JSON.stringify({
                 code: -1,
                 message: `Missing text. Please try: ${req.headers.host}?text=your+text`

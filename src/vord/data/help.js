@@ -44,7 +44,7 @@ help(prefixo, NomeDoBot) {
     
     ➮ OBS: Com 10 participantes, o jogo inicia automaticamente.
 -    
-    ❒ *${prefixo}exit_vord*
+    ❒ *${prefixo}sair_vord*
     ↳ 『 Sai do game após o jogo iniciado. 』
 -
     ➮ OBS: Se você sair enquanto for sua vez, o game irá lhe remover, e após passar para o próximo jogador.

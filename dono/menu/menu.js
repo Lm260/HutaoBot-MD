@@ -332,6 +332,8 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Rm_adv "_@pessoa_"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Lista_adv "_advertências_"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ver_adv "@pessoa"
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Limpar_Adv
+┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Aceitar "Solicitações"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ausente "texto de ausência"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Ativo "volta da ausência"
 ┃╎☆ۣۜۜ͜͡🎴 ${prefixo}Anotar "texto"
@@ -742,6 +744,8 @@ return `‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ┃╎ஓீ፝͜͡🗡 ${prefixo}Reset_Vord ↝ 『 ADM 』
 ┃╎ஓீ፝͜͡🗡 ${prefixo}Responder 
 ┃╎ஓீ፝͜͡🗡 ${prefixo}Confirmar
+┃╎ஓீ፝͜͡🗡 ${prefixo}Verdade <Opção>
+┃╎ஓீ፝͜͡🗡 ${prefixo}Desafio <Opção>
 ┃╰━━─ ≪ •❈• ≫ ─━━╯
 ╰━✰°❀•°✮•| ⊱✿⊰ |•✮°•❀°✰━╯
 

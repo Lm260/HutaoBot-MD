@@ -72,26 +72,6 @@
     "info": "Este comando permite que você possa ver as informações de como cada comando funciona e pra que eles serve\n\nUse #prefixo#Infocmd e digite algum comando que contenha no bot"
   },
   {
-    "command": "hutao",
-    "info": "O comando hutao é o comando que se você digita algo, ela te responde e conversa com você."
-  },
-  {
-    "command": "como fazer figurinha",
-    "info": "Para fazer figurinha usando o bot, basta usar o comando #prefixo#S e marcar alguma imagem ou video/gif abaixo de 9s"
-  },
-  {
-    "command": "systemgold",
-    "info": "O comando systemgold foi criado pelo propio dono feito para entreterimento e diversão... E também conta com varios metodos de se divertir usando o systemgold quando ativo em um grupo\n\n1° Tanto para diversão e entreterimento, o systemgold foi criado como uma forma de obter vip sem pedir ou esperar ganhar\n\n-basta obter uma certa quantis de golds e você ja pode adiquirir livrimente o vip\n\nObs: Vip tem limite de uso, então caso quebre alguma regra poderá ser eliminado*\n\n2° No systemgold você pode ter um inventario de mineração, cassino e escudo para evitar roubos de outros usuarios\n\n-você pode roubar usuarios diferentes até 5 vezes ao dia \n\nObs: para roubar o mesmo usuario, você deve esperar o proximo dia e esperar a pessoa mandar a primeira mensagem do dia para que ela reinicie tudo \n( isso basicamente é para não roubar uma pessoa direto sem que ela não mande mensagem )\n\n3° Escudo: o escudo foi criado para segurança de seus golds evitando a chance de algum intruso rouba-los\n\nObs: o escudo custa uma quantia significante de 50 golds \nE quando um usuario tentar roubo em você\nAs chance de não quebrar são ambas ao de quebrar\n\n-caso quebre, o precesso de roubo continuará e você poderá perder ou não os seus golds\n\n4° Cassino e mineração: o cassino você pode rodar até 5 vezes ao dia\nE a mineração são apenas 3 diarios\n\nObs: A mineração requer uma picareta que custa apenas 20 golds\nE cada comando de minerargold, irá gastar sua picareta até que ela quebre\n\n5° Você pode ganhar todo os dias 20 golds extras pela primeira mensagem*\n\n6° Você pode apostar golds e ter chances de ganhar ou perder o tanto apostado\n\n_Se desejar saber mais... Ative-o usando_\n\n#prefixo#sysgold 1\n\nDepois digite #prefixo#menugold ( lá estará mais do que você prescisa conhecer e usar )"
-  },
-  {
-    "command": "requestgp",
-    "info": "O requestgp é usado para aprovar ou rejeita usuarios que mandam solicitação pra entrar no grupo.\n\nModo de uso:\n\n1° #prefixo#requestgp aceitar = ( _aceita os solicitantes do grupo_ )\n2° #prefixo#requestgp rejeita = ( _rejeita eles_ )\n3° #prefixo#requestgp lista = ( _mostra a lista dos solicitantes pendentes_ )"
-  },
-  {
-    "command": "adv_sistem",
-    "info": "Adv_sistem é o sistema de advertencia criado para adverter usuarios de um grupo.\n\nHá algumas regras relacionada ao sistema exemplo: \n1° _Você irá tomar advertencia caso flood o bot_\n2° _Você tomará ban caso chegue ao limite maximo 3/3_\n3° _Você so tem direito a tomar advertencia caso quebre as regra da bot, grupo e etc_\n\nComandos:\n\n#prefixo#adverter = ( _Usa-se para adverter um usuario do grupo até o limite maximo 3/3_ \n\nObs: [❗] o limite quando excede e ao mesmo tempo a bot não banir, pode ser que o usuario saiu do grupo ou o mesmo é o propio dono dele\n\n#prefixo#ver_adv = ( _usado para ver o total de advertencias de um usuario do grupo_ )\n\nObs: há chances do usuario não se encontrar, tanto pra adverter como para ver as advertencia ( leve em consideração manualmente )"
-  },
-  {
     "command": "listg_global",
     "info": " Este comando é usado para registrar números que serão banidos em todos os grupos que o bot for adm.\n\nPor exemplo: usando *#prefixo#listg_global* você pode mencionar a mensagem, o \"@ \" dela ou apenas digitando o número assim _5511xxxxxx_ \n\nClaro! Substitua *xxx* pelo número completo do usuario. \n\n• Após feito isso, o número será adicionado para ser filtrado em todos os grupo, caso esse número ente em tal outro grupo, ele sera removido imediatamente.\n\n• Lembrando que *#prefixo#listanegra* é somente em um grupo específico ✨"
   },
@@ -100,12 +80,8 @@
     "info": "Este comando é para bloquear comandos em todos os lugares ( _incluindo *pv*_ ).\n\n• Se pronuncia como ( *Bloquear comandos globalmente* )\n\n• Somente dono, bot e lideres poderão usar os comandos que estão bloqueados \n\n• Exemplo de uso: *#prefixo#blockcmdg menu* \n\n_Para desbloquear o comando use: *#prefixo#unblockcmdg menu*_"
   },
   {
-    "command": "odelete",
+    "command": "antidelete",
     "info": "Este comando tem a função de *anti-deletar* mensagens proibidas.\n\nPor exemplo: o comando está incluindo ( antilink, antilinkgp, antiaudio, antiimg e etc)\n\nCaso alguma dessas funções acima estiver ativa e algum usuário findar enviando alguma mensagem proibida, ele será removido. Porém se o *odelete* estiver desligado, a mensagem dele não sera apagada."
-  },
-  {
-    "command": "nforca",
-    "info": "Esta é a nova função da forca que veio por uma reclamação de meus usuarios. Etão ela foi criada para separar para global ou solo\n\n*************** USO ***************\n\n• *#prefixo#forca global*: Será para todos do grupo usar a forca e jogar juntos sem limitações \n\n• *#prefixo#forca solo*: A forca será somente para o usuário que enviou o comando e escolhidos pelo dono da forca que iniciou\n\n******** comandos de dono da forca *********\n\n• *#prefixo#Add_user*: usado para adicionar um usuario para jogar junto\n\n• *#prefixo#Del_user*: Este elimina o usuário para fora do grupo da forca\n\nOBS: somente usuarios e o dono que iniciou a forca poderá usa-la, porém se a forca estiver solo!\n\nCriado por: *_Lm_*"
   },
   {
     "command": "aluguel",
@@ -122,5 +98,25 @@
   {
     "command": "advflood",
     "info": "O comando mencionando é usado para adverter usuários que recentemente flodaram o bot\n\n• Caso o haja flood do bot a partir de um usuário, o bot irá adverter automaticamente com 1 advertência!!\n\n• Com 3/3 advertências, o usuário será removido do grupo imediatamente.\n\nOBS: As advertências acumuladas não são separadas, elas irão somar caso o usuário ja tenha tomado advertências!!"
+  },
+  {
+    "command": "substituir",
+    "info": "O Comando `Substituir` é usado para atualizar um arquivo apenas mencionando um documento e especificando o diretório.\n\n • Exemplo ➮ #prefixo#Substituir ./index.js\n> Mencionando um documento válido que seja a nova `index.js` ( exemplo ).\n-\nApós isso, o arquivo ( index.js ) será atualizado pelo documento que você mencionou. ✨\n-\n> MUITO CUIDADO AO INSERIR O DIRETÓRIO, POIS QUALQUER ERRO PODE CAUSAR PROBLEMAS NO SEU BOT. ⚠️"
+  },
+  {
+    "command": "aceitar",
+    "info": "Este Comando é usado para aceitar solicitações de números que desejam entrar no grupo.\n\nEle aceita todas as solicitações de forma eficiente...\n\nAssim economiza bastante tempo ao invés de aceitar 1 por 1.\n\n> Comando apenas para a administração. ✨"
+  },
+  {
+    "command": "modorpg",
+    "info": "Este é um sistema de RPG do bot. Ele é um sistema de golds onde você pode roubar, minerar, se vingar, atacar e se entreter no grupo. ✨\n\nVocê também pode definir um comando para consumir uma certa quantia em golds. ( `#prefixo#AddCmdGold` + _comando/valor_ )\n\nPara deletar basta usar o comando `DelcmdGold` e especificar o comando que deseja tirar.\n\nCaso não saiba quais os comandos, use `#prefixo#MenuRPG` e aparecerá os comandos logo abaixo. ✨\n\n> Este comandos é apenas para a administração. 🌷"
+  },
+  {
+    "command": "adverter",
+    "info": "Este funciona tanto como um sistema quanto algums comandos. \n-\nNele com 3 advertências a pessoa é removida automaticamente do grupo. ⚔️\n-\n1 - `Adverter`: Comando usado para adverter participantes de um grupo. \n\n2 - `Tirar_adv`: Este é usado para subtrair 1 advertências da pessoa.\n\n3 - `RankAdv`: Veja a lista de pessoas que tomaram advertências.\n\n4 - `Limpar_adv`: Comando usado para limpar toda a lista de advertências\n\n < • TAGS EXTRAS • >\n\n Nos comandos `Adverter` e `Tirar_adv` também suportam essas tags:\nAll = para eliminar o registro de advertências da pessoa.\n\n• Modo de uso: `#prefixo#Tirar_adv @xuser|all` ou mencionado a mensagem da pessoa com `#prefixo#Tirar_adv |all`\n> Suporta apenas para o comando `Tirar_adv`\n\n\nVocê também pode adicionar a quantidade de advertências extras no lugar de `all`\n• Exemplo: `#prefixo#Adverter @xuser|2`\n> Essa pessoa ficará com 2 advertências a mais\n> • Suporte apenas para: ( `Adverter` e `Tirar_adv`\n\nUse: o comando `InfoCmd` e veja majs sobre estes comandos abaixo:\n\n[ advlink, advlinkgp e advflood ]\n-"
+  },
+  {
+    "command": "antipv",
+    "info": "Estes são sistemas de anti responder privado.\n\nComo funciona?\n\n1 - `Antipv`: O bot envia uma memsagem de alerta e depois bloqueia a pessoa que invadiu o privado. \n\n2 - `Antipv2`: Envia apenas a mensagem de alerta para o invasor mas não bloqueia.\n\n3 - `Antipv3`: Ignora qualquer tipo de mensagem, útil para quando você usa o bot no número principal."
   }
 ]

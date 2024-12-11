@@ -20,7 +20,7 @@ const jidDecode = (jid) => {
     const [userAgent, device] = userCombined.split(':');
     const user = userAgent.split('_')[0];
     return {
-        server,
+        server: server,
         user,
         domainType: server === 'lid' ? 1 : 0,
         device: device ? +device : undefined

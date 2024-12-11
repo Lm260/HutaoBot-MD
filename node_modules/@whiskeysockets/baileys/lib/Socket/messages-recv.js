@@ -460,8 +460,7 @@ const makeMessagesRecvSocket = (config) => {
             await authState.keys.set({ 'sender-key-memory': { [remoteJid]: null } });
         }
         logger.debug({ participant, sendToAll }, 'forced new session for retry recp');
-        for (let i = 0; i < msgs.length; i++) {
-            const msg = msgs[i];
+        for (const [i, msg] of msgs.entries()) {
             if (msg) {
                 updateSendMessageAgainCount(ids[i], participant);
                 const msgRelayOpts = { messageId: ids[i] };
@@ -621,10 +620,8 @@ const makeMessagesRecvSocket = (config) => {
         if (response && ((_a = msg === null || msg === void 0 ? void 0 : msg.messageStubParameters) === null || _a === void 0 ? void 0 : _a[0]) === Utils_1.NO_MESSAGE_FOUND_ERROR_TEXT) {
             msg.messageStubParameters = [Utils_1.NO_MESSAGE_FOUND_ERROR_TEXT, response];
         }
-        if (((_c = (_b = msg.message) === null || _b === void 0 ? void 0 : _b.protocolMessage) === null || _c === void 0 ? void 0 : _c.type) === WAProto_1.proto.Message.ProtocolMessage.Type.SHARE_PHONE_NUMBER) {
-            if (node.attrs.sender_pn) {
-                ev.emit('chats.phoneNumberShare', { lid: node.attrs.from, jid: node.attrs.sender_pn });
-            }
+        if (((_c = (_b = msg.message) === null || _b === void 0 ? void 0 : _b.protocolMessage) === null || _c === void 0 ? void 0 : _c.type) === WAProto_1.proto.Message.ProtocolMessage.Type.SHARE_PHONE_NUMBER && node.attrs.sender_pn) {
+            ev.emit('chats.phoneNumberShare', { lid: node.attrs.from, jid: node.attrs.sender_pn });
         }
         try {
             await Promise.all([

@@ -106,8 +106,10 @@ const extractDeviceJids = (result, myJid, excludeZeroDevices) => {
                 const devicesNode = (0, WABinary_1.getBinaryNodeChild)(item, 'devices');
                 const deviceListNode = (0, WABinary_1.getBinaryNodeChild)(devicesNode, 'device-list');
                 if (Array.isArray(deviceListNode === null || deviceListNode === void 0 ? void 0 : deviceListNode.content)) {
+                    //eslint-disable-next-line max-depth
                     for (const { tag, attrs } of deviceListNode.content) {
                         const device = +attrs.id;
+                        //eslint-disable-next-line max-depth
                         if (tag === 'device' && // ensure the "device" tag
                             (!excludeZeroDevices || device !== 0) && // if zero devices are not-excluded, or device is non zero
                             (myUser !== user || myDevice !== device) && // either different user or if me user, not this device

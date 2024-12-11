@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.makeKeyedMutex = exports.makeMutex = void 0;
 const makeMutex = () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let task = Promise.resolve();
     let taskTimeout;
     return {

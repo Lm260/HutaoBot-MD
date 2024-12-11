@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.initAuthCreds = exports.addTransactionCapability = exports.makeCacheableSignalKeyStore = void 0;
 const crypto_1 = require("crypto");
 const node_cache_1 = __importDefault(require("node-cache"));
-const uuid_1 = require("uuid");
 const Defaults_1 = require("../Defaults");
 const crypto_2 = require("./crypto");
 const generics_1 = require("./generics");
@@ -143,6 +142,7 @@ const addTransactionCapability = (state, logger, { maxCommitRetries, delayBetwee
                         let tries = maxCommitRetries;
                         while (tries) {
                             tries -= 1;
+                            //eslint-disable-next-line max-depth
                             try {
                                 await state.set(mutations);
                                 logger.trace({ dbQueriesInTransaction }, 'committed transaction');
@@ -191,13 +191,7 @@ const initAuthCreds = () => {
         accountSettings: {
             unarchiveChats: false
         },
-        // mobile creds
-        deviceId: Buffer.from((0, uuid_1.v4)().replace(/-/g, ''), 'hex').toString('base64url'),
-        phoneId: (0, uuid_1.v4)(),
-        identityId: (0, crypto_1.randomBytes)(20),
         registered: false,
-        backupToken: (0, crypto_1.randomBytes)(20),
-        registration: {},
         pairingCode: undefined,
         lastPropHash: undefined,
         routingInfo: undefined,

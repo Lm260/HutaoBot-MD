@@ -13,10 +13,10 @@ const encodeWAM = (binaryInfo) => {
         .reduce((a, b) => a + b);
     const buffer = Buffer.alloc(totalSize);
     let offset = 0;
-    binaryInfo.buffer.forEach((buffer_) => {
+    for (const buffer_ of binaryInfo.buffer) {
         buffer_.copy(buffer, offset);
         offset += buffer_.length;
-    });
+    }
     return buffer;
 };
 exports.encodeWAM = encodeWAM;

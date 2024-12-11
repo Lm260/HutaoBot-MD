@@ -45,13 +45,11 @@ const getTmpFilesDirectory = () => (0, os_1.tmpdir)();
 const getImageProcessingLibrary = async () => {
     const [_jimp, sharp] = await Promise.all([
         (async () => {
-            const jimp = await (import('jimp')
-                .catch(() => { }));
+            const jimp = await (Promise.resolve().then(() => __importStar(require('jimp'))).catch(() => { }));
             return jimp;
         })(),
         (async () => {
-            const sharp = await (import('sharp')
-                .catch(() => { }));
+            const sharp = await (Promise.resolve().then(() => __importStar(require('sharp'))).catch(() => { }));
             return sharp;
         })()
     ]);
@@ -192,7 +190,7 @@ const mediaMessageSHA256B64 = (message) => {
 };
 exports.mediaMessageSHA256B64 = mediaMessageSHA256B64;
 async function getAudioDuration(buffer) {
-    const musicMetadata = await import('music-metadata');
+    const musicMetadata = await Promise.resolve().then(() => __importStar(require('music-metadata')));
     let metadata;
     if (Buffer.isBuffer(buffer)) {
         metadata = await musicMetadata.parseBuffer(buffer, undefined, { duration: true });
@@ -217,7 +215,7 @@ exports.getAudioDuration = getAudioDuration;
  */
 async function getAudioWaveform(buffer, logger) {
     try {
-        const audioDecode = (buffer) => import('audio-decode').then(({ default: audioDecode }) => audioDecode(buffer));
+        const audioDecode = (buffer) => Promise.resolve().then(() => __importStar(require('audio-decode'))).then(({ default: audioDecode }) => audioDecode(buffer));
         let audioData;
         if (Buffer.isBuffer(buffer)) {
             audioData = buffer;
@@ -331,7 +329,7 @@ const encryptedStream = async (media, mediaType, { logger, saveOriginalFileIfReq
     let writeStream;
     let didSaveToTmpPath = false;
     if (type === 'file') {
-        bodyPath = media.url;
+        bodyPath = media.url.toString();
     }
     else if (saveOriginalFileIfRequired) {
         bodyPath = (0, path_1.join)(getTmpFilesDirectory(), mediaType + (0, generics_1.generateMessageID)());
@@ -354,10 +352,8 @@ const encryptedStream = async (media, mediaType, { logger, saveOriginalFileIfReq
                 });
             }
             sha256Plain = sha256Plain.update(data);
-            if (writeStream) {
-                if (!writeStream.write(data)) {
-                    await (0, events_1.once)(writeStream, 'drain');
-                }
+            if (writeStream && !writeStream.write(data)) {
+                await (0, events_1.once)(writeStream, 'drain');
             }
             onChunk(aes.update(data));
         }
@@ -537,6 +533,7 @@ const getWAUploadToServer = ({ customUploadHosts, fetchAgent, logger, options },
             logger.debug(`uploading to "${hostname}"`);
             const auth = encodeURIComponent(uploadInfo.auth); // the auth token
             const url = `https://${hostname}${Defaults_1.MEDIA_PATH_MAP[mediaType]}/${fileEncSha256B64}?auth=${auth}&token=${fileEncSha256B64}`;
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             let result;
             try {
                 const body = await axios_1.default.post(url, stream, {
@@ -668,7 +665,3 @@ const MEDIA_RETRY_STATUS_MAP = {
     [WAProto_1.proto.MediaRetryNotification.ResultType.NOT_FOUND]: 404,
     [WAProto_1.proto.MediaRetryNotification.ResultType.GENERAL_ERROR]: 418,
 };
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function __importStar(arg0) {
-    throw new Error('Function not implemented.');
-}

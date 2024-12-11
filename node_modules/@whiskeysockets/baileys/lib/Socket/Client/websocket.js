@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.WebSocketClient = void 0;
 const ws_1 = __importDefault(require("ws"));
 const Defaults_1 = require("../../Defaults");
-const abstract_socket_client_1 = require("./abstract-socket-client");
-class WebSocketClient extends abstract_socket_client_1.AbstractSocketClient {
+const types_1 = require("./types");
+class WebSocketClient extends types_1.AbstractSocketClient {
     constructor() {
         super(...arguments);
         this.socket = null;

@@ -1,4 +1,27 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -35,12 +58,14 @@ const getPlatformId = (browser) => {
 };
 exports.getPlatformId = getPlatformId;
 exports.BufferJSON = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     replacer: (k, value) => {
         if (Buffer.isBuffer(value) || value instanceof Uint8Array || (value === null || value === void 0 ? void 0 : value.type) === 'Buffer') {
             return { type: 'Buffer', data: Buffer.from((value === null || value === void 0 ? void 0 : value.data) || value).toString('base64') };
         }
         return value;
     },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     reviver: (_, value) => {
         if (typeof value === 'object' && !!value && (value.buffer === true || value.type === 'Buffer')) {
             const val = value.data || value.value;
@@ -88,7 +113,7 @@ const encodeBigEndian = (e, t = 4) => {
     return a;
 };
 exports.encodeBigEndian = encodeBigEndian;
-const toNumber = (t) => ((typeof t === 'object' && t) ? ('toNumber' in t ? t.toNumber() : t.low) : t);
+const toNumber = (t) => ((typeof t === 'object' && t) ? ('toNumber' in t ? t.toNumber() : t.low) : t || 0);
 exports.toNumber = toNumber;
 /** unix timestamp of a date in seconds */
 const unixTimestampSeconds = (date = new Date()) => Math.floor(date.getTime() / 1000);
@@ -207,8 +232,7 @@ exports.bindWaitForConnectionUpdate = bindWaitForConnectionUpdate;
 const printQRIfNecessaryListener = (ev, logger) => {
     ev.on('connection.update', async ({ qr }) => {
         if (qr) {
-            const QR = await import('qrcode-terminal')
-                .then(m => m.default || m)
+            const QR = await Promise.resolve().then(() => __importStar(require('qrcode-terminal'))).then(m => m.default || m)
                 .catch(() => {
                 logger.error('QR code terminal not added as dependency');
             });
@@ -349,7 +373,9 @@ const getCodeFromWSError = (error) => {
             statusCode = code;
         }
     }
-    else if (((_b = error === null || error === void 0 ? void 0 : error.code) === null || _b === void 0 ? void 0 : _b.startsWith('E'))
+    else if (
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    ((_b = error === null || error === void 0 ? void 0 : error.code) === null || _b === void 0 ? void 0 : _b.startsWith('E'))
         || ((_c = error === null || error === void 0 ? void 0 : error.message) === null || _c === void 0 ? void 0 : _c.includes('timed out'))) { // handle ETIMEOUT, ENOTFOUND etc
         statusCode = 408;
     }
@@ -364,6 +390,7 @@ const isWABusinessPlatform = (platform) => {
     return platform === 'smbi' || platform === 'smba';
 };
 exports.isWABusinessPlatform = isWABusinessPlatform;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function trimUndefined(obj) {
     for (const key in obj) {
         if (typeof obj[key] === 'undefined') {
@@ -378,8 +405,8 @@ function bytesToCrockford(buffer) {
     let value = 0;
     let bitCount = 0;
     const crockford = [];
-    for (let i = 0; i < buffer.length; i++) {
-        value = (value << 8) | (buffer[i] & 0xff);
+    for (const element of buffer) {
+        value = (value << 8) | (element & 0xff);
         bitCount += 8;
         while (bitCount >= 5) {
             crockford.push(CROCKFORD_CHARACTERS.charAt((value >>> (bitCount - 5)) & 31));

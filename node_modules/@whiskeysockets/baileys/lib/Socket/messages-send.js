@@ -380,14 +380,13 @@ const makeMessagesSocket = (config) => {
                 await authState.keys.set({ 'sender-key-memory': { [jid]: senderKeyMap } });
             }
             else {
-                const { user: meUser, device: meDevice } = (0, WABinary_1.jidDecode)(meId);
+                const { user: meUser } = (0, WABinary_1.jidDecode)(meId);
                 if (!participant) {
                     devices.push({ user });
-                    // do not send message to self if the device is 0 (mobile)
-                    if (!((additionalAttributes === null || additionalAttributes === void 0 ? void 0 : additionalAttributes['category']) === 'peer' && user === meUser)) {
-                        if (meDevice !== undefined && meDevice !== 0) {
-                            devices.push({ user: meUser });
-                        }
+                    if (user !== meUser) {
+                        devices.push({ user: meUser });
+                    }
+                    if ((additionalAttributes === null || additionalAttributes === void 0 ? void 0 : additionalAttributes['category']) !== 'peer') {
                         const additionalDevices = await getUSyncDevices([meId, jid], !!useUserDevicesCache, true);
                         devices.push(...additionalDevices);
                     }
@@ -434,7 +433,7 @@ const makeMessagesSocket = (config) => {
                 tag: 'message',
                 attrs: {
                     id: msgId,
-                    type: 'text',
+                    type: getMessageType(message),
                     ...(additionalAttributes || {})
                 },
                 content: binaryNodeContent
@@ -473,6 +472,12 @@ const makeMessagesSocket = (config) => {
             await sendNode(stanza);
         });
         return msgId;
+    };
+    const getMessageType = (message) => {
+        if (message.pollCreationMessage || message.pollCreationMessageV2 || message.pollCreationMessageV3) {
+            return 'poll';
+        }
+        return 'text';
     };
     const getMediaType = (message) => {
         if (message.imageMessage) {
@@ -643,7 +648,9 @@ const makeMessagesSocket = (config) => {
                 const isDeleteMsg = 'delete' in content && !!content.delete;
                 const isEditMsg = 'edit' in content && !!content.edit;
                 const isPinMsg = 'pin' in content && !!content.pin;
+                const isPollMessage = 'poll' in content && !!content.poll;
                 const additionalAttributes = {};
+                const additionalNodes = [];
                 // required for delete
                 if (isDeleteMsg) {
                     // if the chat is a group, and I am not the author, then delete the message as an admin
@@ -660,10 +667,18 @@ const makeMessagesSocket = (config) => {
                 else if (isPinMsg) {
                     additionalAttributes.edit = '2';
                 }
+                else if (isPollMessage) {
+                    additionalNodes.push({
+                        tag: 'meta',
+                        attrs: {
+                            polltype: 'creation'
+                        },
+                    });
+                }
                 if ('cachedGroupMetadata' in options) {
                     console.warn('cachedGroupMetadata in sendMessage are deprecated, now cachedGroupMetadata is part of the socket config.');
                 }
-                await relayMessage(jid, fullMsg.message, { messageId: fullMsg.key.id, useCachedGroupMetadata: options.useCachedGroupMetadata, additionalAttributes, statusJidList: options.statusJidList });
+                await relayMessage(jid, fullMsg.message, { messageId: fullMsg.key.id, useCachedGroupMetadata: options.useCachedGroupMetadata, additionalAttributes, statusJidList: options.statusJidList, additionalNodes });
                 if (config.emitOwnEvents) {
                     process.nextTick(() => {
                         processingMutex.mutex(() => (upsertMessage(fullMsg, 'append')));

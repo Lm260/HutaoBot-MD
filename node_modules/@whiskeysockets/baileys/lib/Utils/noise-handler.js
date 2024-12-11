@@ -11,7 +11,7 @@ const generateIV = (counter) => {
     new DataView(iv).setUint32(8, counter);
     return new Uint8Array(iv);
 };
-const makeNoiseHandler = ({ keyPair: { private: privateKey, public: publicKey }, NOISE_HEADER, mobile, logger, routingInfo }) => {
+const makeNoiseHandler = ({ keyPair: { private: privateKey, public: publicKey }, NOISE_HEADER, logger, routingInfo }) => {
     logger = logger.child({ class: 'ns' });
     const authenticate = (data) => {
         if (!isFinished) {
@@ -83,15 +83,10 @@ const makeNoiseHandler = ({ keyPair: { private: privateKey, public: publicKey },
             const decStaticContent = decrypt(serverHello.static);
             mixIntoKey(crypto_1.Curve.sharedKey(privateKey, decStaticContent));
             const certDecoded = decrypt(serverHello.payload);
-            if (mobile) {
-                WAProto_1.proto.CertChain.NoiseCertificate.decode(certDecoded);
-            }
-            else {
-                const { intermediate: certIntermediate } = WAProto_1.proto.CertChain.decode(certDecoded);
-                const { issuerSerial } = WAProto_1.proto.CertChain.NoiseCertificate.Details.decode(certIntermediate.details);
-                if (issuerSerial !== Defaults_1.WA_CERT_DETAILS.SERIAL) {
-                    throw new boom_1.Boom('certification match failed', { statusCode: 400 });
-                }
+            const { intermediate: certIntermediate } = WAProto_1.proto.CertChain.decode(certDecoded);
+            const { issuerSerial } = WAProto_1.proto.CertChain.NoiseCertificate.Details.decode(certIntermediate.details);
+            if (issuerSerial !== Defaults_1.WA_CERT_DETAILS.SERIAL) {
+                throw new boom_1.Boom('certification match failed', { statusCode: 400 });
             }
             const keyEnc = encrypt(noiseKey.public);
             mixIntoKey(crypto_1.Curve.sharedKey(noiseKey.private, serverHello.ephemeral));

@@ -182,16 +182,14 @@ exports.default = (config) => {
                         const jid = (0, WABinary_1.jidNormalizedUser)(msg.key.remoteJid);
                         const list = assertMessageList(jid);
                         list.upsert(msg, 'append');
-                        if (type === 'notify') {
-                            if (!chats.get(jid)) {
-                                ev.emit('chats.upsert', [
-                                    {
-                                        id: jid,
-                                        conversationTimestamp: (0, Utils_1.toNumber)(msg.messageTimestamp),
-                                        unreadCount: 1
-                                    }
-                                ]);
-                            }
+                        if (type === 'notify' && !chats.get(jid)) {
+                            ev.emit('chats.upsert', [
+                                {
+                                    id: jid,
+                                    conversationTimestamp: (0, Utils_1.toNumber)(msg.messageTimestamp),
+                                    unreadCount: 1
+                                }
+                            ]);
                         }
                     }
                     break;

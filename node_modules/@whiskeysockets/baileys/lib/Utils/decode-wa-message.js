@@ -153,6 +153,7 @@ const decryptMessageNode = (stanza, meId, meLid, repository, logger) => {
                         let msg = WAProto_1.proto.Message.decode(e2eType !== 'plaintext' ? (0, generics_1.unpadRandomMax16)(msgBuffer) : msgBuffer);
                         msg = ((_a = msg.deviceSentMessage) === null || _a === void 0 ? void 0 : _a.message) || msg;
                         if (msg.senderKeyDistributionMessage) {
+                            //eslint-disable-next-line max-depth
                             try {
                                 await repository.processSenderKeyDistributionMessage({
                                     authorJid: author,

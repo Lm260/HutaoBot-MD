@@ -138,7 +138,9 @@ const makeBufferData = () => {
         groupUpdates: {}
     };
 };
-function append(data, historyCache, event, eventData, logger) {
+function append(data, historyCache, event, 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+eventData, logger) {
     var _a, _b, _c;
     switch (event) {
         case 'messaging-history.set':
@@ -502,12 +504,10 @@ function consolidateEvents(data) {
     return map;
 }
 function concatChats(a, b) {
-    if (b.unreadCount === null) {
-        // neutralize unread counter
-        if (a.unreadCount < 0) {
-            a.unreadCount = undefined;
-            b.unreadCount = undefined;
-        }
+    if (b.unreadCount === null && // neutralize unread counter
+        a.unreadCount < 0) {
+        a.unreadCount = undefined;
+        b.unreadCount = undefined;
     }
     if (typeof a.unreadCount === 'number' && typeof b.unreadCount === 'number') {
         b = { ...b };

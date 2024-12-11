@@ -693,17 +693,13 @@ const downloadMediaMessage = async (message, type, options, ctx) => {
     const result = await downloadMsg()
         .catch(async (error) => {
         var _a;
-        if (ctx) {
-            if (axios_1.default.isAxiosError(error)) {
-                // check if the message requires a reupload
-                if (REUPLOAD_REQUIRED_STATUS.includes((_a = error.response) === null || _a === void 0 ? void 0 : _a.status)) {
-                    ctx.logger.info({ key: message.key }, 'sending reupload media request...');
-                    // request reupload
-                    message = await ctx.reuploadRequest(message);
-                    const result = await downloadMsg();
-                    return result;
-                }
-            }
+        if (ctx && axios_1.default.isAxiosError(error) && // check if the message requires a reupload
+            REUPLOAD_REQUIRED_STATUS.includes((_a = error.response) === null || _a === void 0 ? void 0 : _a.status)) {
+            ctx.logger.info({ key: message.key }, 'sending reupload media request...');
+            // request reupload
+            message = await ctx.reuploadRequest(message);
+            const result = await downloadMsg();
+            return result;
         }
         throw error;
     });

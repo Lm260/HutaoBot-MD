@@ -97,7 +97,7 @@ return `
 ┃╎᭪➣ Prefixo: 〘 ${prefixo} 〙
 ┃╎᭪➣ Nome do bot: ${NomeDoBot}
 ┃╎᭪➣ Versão do bot: 7.5.5 
-┃╎᭪➣ Baileys version: 6.7.8
+┃╎᭪➣ Baileys version: 6.7.9
 ┃╎᭪➣ Tema: Hutao / Genshin Impact〘 Game 〙
 ┃╎᭪➣ Dono: ${NickDono}
 ┃╎᭪➣ Numero do dono: ${NumeroDoDono}

@@ -24,7 +24,7 @@
   },
   "name": "HutaoBot-MD",
   "description": "Hutao Bot, desenvolvida para oferecer melhor conexão, segurança e desempenho. Qualquer duvida, me chame no Whatsapp: +559284828701",
-  "version": "7.5.5",
+  "version": "7.5.6",
   "scripts": {
     "start": "ulimit -c 0 && bash start.sh",
     "test": "node connect.js"

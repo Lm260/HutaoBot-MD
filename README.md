@@ -1,8 +1,8 @@
-<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=836FFF&center=falso&vCenter=falso&lines=𝑯𝒖𝒕𝒂𝒐𝑩𝒐𝒕-𝑴𝑫+✿+V7.5.5✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;✰✰✰✰✰">      
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=836FFF&center=falso&vCenter=falso&lines=𝑯𝒖𝒕𝒂𝒐𝑩𝒐𝒕-𝑴𝑫+✿+V7.5.6✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;✰✰✰✰✰">      
 
 <h1 align="center">
 <p>
-<img src= "https://xatimg.com/image/Y4g1COu5OEfA.jpg" alt="HUTAO-BOT V7.5.5✓" width="720">
+<img src= "https://xatimg.com/image/Y4g1COu5OEfA.jpg" alt="HUTAO-BOT V7.5.6✓" width="720">
 </p>
 
 <p align="center">
@@ -11,12 +11,12 @@
 
 <p align="center">
 <img title="Autor" src="https://img.shields.io/badge/Autor-Lm-orange.svg?style=for-the-badge&logo=github"></a>
-<img title="Versão" src="https://img.shields.io/badge/Versão-7.5.5-orange.svg?style=for-the-badge&logo=github"></a>
+<img title="Versão" src="https://img.shields.io/badge/Versão-7.5.6-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 
 <div align="center">
   
-[![WhatsApp](https://img.shields.io/badge/Suporte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/CMcAAljSWZhHWyssMJFCp8)
+[![WhatsApp](https://img.shields.io/badge/Suporte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/IoUPlcsAdP98a7VrW3jBQp)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/lm_only_)
 </div>
 

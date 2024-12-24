@@ -1,0 +1,19 @@
+{
+  "name": "genytdl-core",
+  "version": "1.0.0",
+  "description": "Um simples downloader de audio e video do genyoutube.com",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "author": "Lm Only",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "undici": "^7.2.0"
+  }
+}

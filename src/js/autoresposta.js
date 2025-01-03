@@ -6,17 +6,19 @@
  * Programe suas mensagems e respostas para seu bot
  *
  * Suporta: Mensagem, Áudio e Sticker
- * Muita atenção ao criar ou midar alguma coisa, pois qualquer erro, pode dar um problemão.
+ * Muita atenção ao criar ou mudar alguma coisa, pois qualquer erro, pode dar um problemão.
  *
  * Audios e Figurinhas também suportam URLs e o diretório;
  *
  * OBS: • Textos de ( receber e contenha ) devem ser em letra minusculas e sem acentuação.
  * • Não use isso para outros fims maliciosos.
  * • Qualquer duvida, me chame: 559284828701
+ *
+ * TUTORIAL: https://whatsapp.com/channel/0029ValLKgUAO7RCUU0dO03k/3020
  */
  
 
-//Biblioteca de algums áudios do bot
+//Biblioteca de algums áudios do bot:qa
 const audioBot = require('../../assets/media/audios/index.js');
 
 

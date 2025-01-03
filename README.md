@@ -40,9 +40,9 @@ Você pode baixar o arquivo e descompacta-lo depois. [Baixar](https://github.com
 ------------------
 1 - COMANDO: 🌸
 ````bash
-termux-change-repo
+termux-setup-storage
 ````
-> **Aviso*** Aperte em OK, Escolha a opção "Mirrors By Grimler" e pressione OK novamente!
+> Permitir que o termux acesse seus arquivos
 ------------------
 2 - COMANDO: 🌸
 ````bash
@@ -53,7 +53,7 @@ pkg upgrade-y && pkg update -y
 ------------------
 3 - COMANDO: 🌸
 ````bash
-pkg install -y ffmpeg nodejs-lts wget tesseract git && termux-setup-storage
+pkg install -y ffmpeg nodejs-lts wget tesseract git
 ````
 4 - COMANDO: 🌸
 ````bash

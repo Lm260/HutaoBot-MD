@@ -2,7 +2,7 @@
 const {
 	readFileSync,
 	existsSync
-} = require('fs-extra');
+} = require('fs');
 
 const {
 	imageToWebp2,
@@ -14,7 +14,7 @@ const {
 	getBuffer
 } = require("../js/functions.js");
 
-const sendImageAsSticker2 = async (switzg, jid, path, quoted, options = {}) => {
+const sendImageAsSticker2 = async ({ sendMessage }, jid, path, quoted, options = {}) => {
 	let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,` [1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : existsSync(path) ? readFileSync(path) : Buffer.alloc(0);
 	let buffer;
 	if (options && (options.packname || options.author)) {
@@ -23,7 +23,7 @@ const sendImageAsSticker2 = async (switzg, jid, path, quoted, options = {}) => {
 		buffer = await imageToWebp2(buff);
 	}
 	
-	await switzg.sendMessage(jid, {
+	await sendMessage(jid, {
 		sticker: {
 			url: buffer
 		},

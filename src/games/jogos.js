@@ -427,11 +427,6 @@ embaralhada: 'RITAANGNE',
 dica: 'ALIMENTO'
 },          
 {       
-resposta: 'PRETO',
-embaralhada: 'TOPRE',
-dica: 'Cor do aluck'
-},           
-{       
 resposta: 'INSTAGRAM',
 embaralhada: 'MASTGRMIAN',
 dica: 'REDE SOCIAL'

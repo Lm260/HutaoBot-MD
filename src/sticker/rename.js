@@ -3,7 +3,7 @@
 const {
 	readFileSync,
 	existsSync
-} = require('fs-extra');
+} = require('fs');
 
 const {
 	imageToWebp,

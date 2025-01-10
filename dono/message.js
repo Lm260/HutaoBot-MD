@@ -16,7 +16,7 @@ const txt = {
     
     only_group: "🔒 *COMANDO DISPONÍVEL APENAS PARA GRUPOS. 🙇‍♀️*",
     
-    isBotAdm: "*Eu presciso ser ADM do grupo* 🥺",
+    isBotAdm: "*Eu preciso ser ADM do grupo* 🥺",
     
     command_blocked: "*COMANDO INDISPONÍVEL PARA USO NESTE GRUPO!! 🙅‍♀️*",
     

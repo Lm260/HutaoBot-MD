@@ -46,7 +46,7 @@ termux-setup-storage
 ------------------
 2 - COMANDO: 🌸
 ````bash
-pkg upgrade-y && pkg update -y
+pkg upgrade -y && pkg update -y
 ````
 > **Atenção**!!!
 > Se aparecer "(Y/I/N/O/D/Z) [default=N] ?", use Y e após Enter ou pular linha no seu teclado.

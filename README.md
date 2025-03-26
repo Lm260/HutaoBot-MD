@@ -54,12 +54,12 @@ pkg install -y ffmpeg nodejs-lts wget tesseract git
 cd /sdcard/HutaoBot-MD && npm start
 ````
 > Use-o para toda vez que for ligar o bot!
-> Funciona apenas se você tiver uma key contratada
+> É necessário uma key para usar o bot
 ------------------
 
 ## Contratar Key
 
-**É necessário uma key para poder usar o bot**
+**Key para ter acesso ao bot**
 
 * [__Fale Conosco__](https://wa.me/559284828701)
 
@@ -81,7 +81,7 @@ cd /sdcard/HutaoBot-MD && npm start
 - Use o bot moderadamente
 - Evite compartilhar o projeto 
 - Proibido venda de terceiros
-> Estamos sempre de olho para qualquer ação inapropriada
+> Estaremos sempre de olho em qualquer ação inapropriada
 
 ## License
 

@@ -75,14 +75,6 @@ cd /sdcard/HutaoBot-MD && npm start
 - **Comandos:** HutaoBot-MD contém todos os comando 100% gratuitos e funcionais. Algums podem apresentar falhas, mas iremos corrigir o mais rápido possível;
 - **Uso:** Fácil de usar, e rápida em processo de dados.
 - **Configuração e segurança**: Você pode programar o bot para enviar uma mensagem específica. E também manter a segurança de seu grupo com algums sistemas disponíveis.
-
-## Atenção 
-
-- Use o bot moderadamente
-- Evite compartilhar o projeto 
-- Proibido venda de terceiros
-> Estamos sempre de olho para qualquer ação inapropriada
-
 ## License
 
 Licensed under [MIT](./LICENSE).

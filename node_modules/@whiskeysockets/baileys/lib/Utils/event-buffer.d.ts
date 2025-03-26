@@ -1,5 +1,5 @@
-import { Logger } from 'pino';
 import { BaileysEventEmitter, BaileysEventMap } from '../Types';
+import { ILogger } from './logger';
 /**
  * A map that contains a list of all events that have been triggered
  *
@@ -31,5 +31,5 @@ type BaileysBufferableEventEmitter = BaileysEventEmitter & {
  * making the data processing more efficient.
  * @param ev the baileys event emitter
  */
-export declare const makeEventBuffer: (logger: Logger) => BaileysBufferableEventEmitter;
+export declare const makeEventBuffer: (logger: ILogger) => BaileysBufferableEventEmitter;
 export {};

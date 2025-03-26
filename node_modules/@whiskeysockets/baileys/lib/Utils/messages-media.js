@@ -68,7 +68,7 @@ const hkdfInfoKey = (type) => {
 };
 exports.hkdfInfoKey = hkdfInfoKey;
 /** generates all the keys required to encrypt/decrypt & sign a media message */
-function getMediaKeys(buffer, mediaType) {
+async function getMediaKeys(buffer, mediaType) {
     if (!buffer) {
         throw new boom_1.Boom('Cannot derive from empty media key');
     }
@@ -76,7 +76,7 @@ function getMediaKeys(buffer, mediaType) {
         buffer = Buffer.from(buffer.replace('data:;base64,', ''), 'base64');
     }
     // expand using HKDF to 112 bytes, also pass in the relevant app info
-    const expandedMediaKey = (0, crypto_1.hkdf)(buffer, 112, { info: (0, exports.hkdfInfoKey)(mediaType) });
+    const expandedMediaKey = await (0, crypto_1.hkdf)(buffer, 112, { info: (0, exports.hkdfInfoKey)(mediaType) });
     return {
         iv: expandedMediaKey.slice(0, 16),
         cipherKey: expandedMediaKey.slice(16, 48),
@@ -215,7 +215,7 @@ exports.getAudioDuration = getAudioDuration;
  */
 async function getAudioWaveform(buffer, logger) {
     try {
-        const audioDecode = (buffer) => Promise.resolve().then(() => __importStar(require('audio-decode'))).then(({ default: audioDecode }) => audioDecode(buffer));
+        const { default: decoder } = await eval('import(\'audio-decode\')');
         let audioData;
         if (Buffer.isBuffer(buffer)) {
             audioData = buffer;
@@ -227,7 +227,7 @@ async function getAudioWaveform(buffer, logger) {
         else {
             audioData = await (0, exports.toBuffer)(buffer);
         }
-        const audioBuffer = await audioDecode(audioData);
+        const audioBuffer = await decoder(audioData);
         const rawData = audioBuffer.getChannelData(0); // We only need to work with one channel of data
         const samples = 64; // Number of samples we want to have in our final data set
         const blockSize = Math.floor(rawData.length / samples); // the number of samples in each subdivision
@@ -323,7 +323,7 @@ const encryptedStream = async (media, mediaType, { logger, saveOriginalFileIfReq
     const { stream, type } = await (0, exports.getStream)(media, opts);
     logger === null || logger === void 0 ? void 0 : logger.debug('fetched media stream');
     const mediaKey = Crypto.randomBytes(32);
-    const { cipherKey, iv, macKey } = getMediaKeys(mediaKey, mediaType);
+    const { cipherKey, iv, macKey } = await getMediaKeys(mediaKey, mediaType);
     const encWriteStream = new stream_1.Readable({ read: () => { } });
     let bodyPath;
     let writeStream;
@@ -411,9 +411,9 @@ const toSmallestChunkSize = (num) => {
 };
 const getUrlFromDirectPath = (directPath) => `https://${DEF_HOST}${directPath}`;
 exports.getUrlFromDirectPath = getUrlFromDirectPath;
-const downloadContentFromMessage = ({ mediaKey, directPath, url }, type, opts = {}) => {
+const downloadContentFromMessage = async ({ mediaKey, directPath, url }, type, opts = {}) => {
     const downloadUrl = url || (0, exports.getUrlFromDirectPath)(directPath);
-    const keys = getMediaKeys(mediaKey, type);
+    const keys = await getMediaKeys(mediaKey, type);
     return (0, exports.downloadEncryptedContent)(downloadUrl, keys, opts);
 };
 exports.downloadContentFromMessage = downloadContentFromMessage;
@@ -583,11 +583,11 @@ const getMediaRetryKey = (mediaKey) => {
 /**
  * Generate a binary node that will request the phone to re-upload the media & return the newly uploaded URL
  */
-const encryptMediaRetryRequest = (key, mediaKey, meId) => {
+const encryptMediaRetryRequest = async (key, mediaKey, meId) => {
     const recp = { stanzaId: key.id };
     const recpBuffer = WAProto_1.proto.ServerErrorReceipt.encode(recp).finish();
     const iv = Crypto.randomBytes(12);
-    const retryKey = getMediaRetryKey(mediaKey);
+    const retryKey = await getMediaRetryKey(mediaKey);
     const ciphertext = (0, crypto_1.aesEncryptGCM)(recpBuffer, retryKey, iv, Buffer.from(key.id));
     const req = {
         tag: 'receipt',
@@ -651,8 +651,8 @@ const decodeMediaRetryNode = (node) => {
     return event;
 };
 exports.decodeMediaRetryNode = decodeMediaRetryNode;
-const decryptMediaRetryData = ({ ciphertext, iv }, mediaKey, msgId) => {
-    const retryKey = getMediaRetryKey(mediaKey);
+const decryptMediaRetryData = async ({ ciphertext, iv }, mediaKey, msgId) => {
+    const retryKey = await getMediaRetryKey(mediaKey);
     const plaintext = (0, crypto_1.aesDecryptGCM)(ciphertext, retryKey, iv, Buffer.from(msgId));
     return WAProto_1.proto.MediaRetryNotification.decode(plaintext);
 };

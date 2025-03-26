@@ -1,11 +1,11 @@
 import type KeyedDB from '@adiwajshing/keyed-db';
 import type { Comparable } from '@adiwajshing/keyed-db/lib/Types';
-import type { Logger } from 'pino';
 import { proto } from '../../WAProto';
 import type makeMDSocket from '../Socket';
 import type { BaileysEventEmitter, Chat, ConnectionState, Contact, GroupMetadata, PresenceData, WAMessage, WAMessageCursor, WAMessageKey } from '../Types';
 import { Label } from '../Types/Label';
 import { LabelAssociation } from '../Types/LabelAssociation';
+import { ILogger } from '../Utils/logger';
 import { ObjectRepository } from './object-repository';
 type WASocket = ReturnType<typeof makeMDSocket>;
 export declare const waChatKey: (pin: boolean) => {
@@ -17,7 +17,7 @@ export declare const waLabelAssociationKey: Comparable<LabelAssociation, string>
 export type BaileysInMemoryStoreConfig = {
     chatKey?: Comparable<Chat, string>;
     labelAssociationKey?: Comparable<LabelAssociation, string>;
-    logger?: Logger;
+    logger?: ILogger;
     socket?: WASocket;
 };
 declare const _default: (config: BaileysInMemoryStoreConfig) => {

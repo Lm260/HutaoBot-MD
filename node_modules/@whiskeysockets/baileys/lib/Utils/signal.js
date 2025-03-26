@@ -95,29 +95,19 @@ const parseAndInjectE2ESessions = async (node, repository) => {
 };
 exports.parseAndInjectE2ESessions = parseAndInjectE2ESessions;
 const extractDeviceJids = (result, myJid, excludeZeroDevices) => {
-    var _a;
     const { user: myUser, device: myDevice } = (0, WABinary_1.jidDecode)(myJid);
     const extracted = [];
-    for (const node of result.content) {
-        const list = (_a = (0, WABinary_1.getBinaryNodeChild)(node, 'list')) === null || _a === void 0 ? void 0 : _a.content;
-        if (list && Array.isArray(list)) {
-            for (const item of list) {
-                const { user } = (0, WABinary_1.jidDecode)(item.attrs.jid);
-                const devicesNode = (0, WABinary_1.getBinaryNodeChild)(item, 'devices');
-                const deviceListNode = (0, WABinary_1.getBinaryNodeChild)(devicesNode, 'device-list');
-                if (Array.isArray(deviceListNode === null || deviceListNode === void 0 ? void 0 : deviceListNode.content)) {
-                    //eslint-disable-next-line max-depth
-                    for (const { tag, attrs } of deviceListNode.content) {
-                        const device = +attrs.id;
-                        //eslint-disable-next-line max-depth
-                        if (tag === 'device' && // ensure the "device" tag
-                            (!excludeZeroDevices || device !== 0) && // if zero devices are not-excluded, or device is non zero
-                            (myUser !== user || myDevice !== device) && // either different user or if me user, not this device
-                            (device === 0 || !!attrs['key-index']) // ensure that "key-index" is specified for "non-zero" devices, produces a bad req otherwise
-                        ) {
-                            extracted.push({ user, device });
-                        }
-                    }
+    for (const userResult of result) {
+        const { devices, id } = userResult;
+        const { user } = (0, WABinary_1.jidDecode)(id);
+        const deviceList = devices === null || devices === void 0 ? void 0 : devices.deviceList;
+        if (Array.isArray(deviceList)) {
+            for (const { id: device, keyIndex } of deviceList) {
+                if ((!excludeZeroDevices || device !== 0) && // if zero devices are not-excluded, or device is non zero
+                    (myUser !== user || myDevice !== device) && // either different user or if me user, not this device
+                    (device === 0 || !!keyIndex) // ensure that "key-index" is specified for "non-zero" devices, produces a bad req otherwise
+                ) {
+                    extracted.push({ user, device });
                 }
             }
         }

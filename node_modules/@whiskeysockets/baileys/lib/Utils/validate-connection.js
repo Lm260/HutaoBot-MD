@@ -22,7 +22,9 @@ const getUserAgent = (config) => {
         device: 'Desktop',
         osBuildNumber: '0.1',
         localeLanguageIso6391: 'en',
-        localeCountryIso31661Alpha2: 'US'
+        mnc: '000',
+        mcc: '000',
+        localeCountryIso31661Alpha2: config.countryCode,
     };
 };
 const PLATFORM_MAP = {
@@ -49,7 +51,8 @@ const generateLoginNode = (userJid, config) => {
     const { user, device } = (0, WABinary_1.jidDecode)(userJid);
     const payload = {
         ...getClientPayload(config),
-        passive: true,
+        passive: false,
+        pull: true,
         username: +user,
         device: device,
     };
@@ -75,6 +78,7 @@ const generateRegistrationNode = ({ registrationId, signedPreKey, signedIdentity
     const registerPayload = {
         ...getClientPayload(config),
         passive: false,
+        pull: false,
         devicePairingData: {
             buildHash: appVersionBuf,
             deviceProps: companionProto,

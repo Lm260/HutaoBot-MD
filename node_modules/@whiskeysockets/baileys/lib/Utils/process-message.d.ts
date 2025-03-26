@@ -1,7 +1,7 @@
 import { AxiosRequestConfig } from 'axios';
-import type { Logger } from 'pino';
 import { proto } from '../../WAProto';
 import { AuthenticationCreds, BaileysEventEmitter, CacheStore, SignalKeyStoreWithTransaction, SocketConfig } from '../Types';
+import { ILogger } from './logger';
 type ProcessMessageContext = {
     shouldProcessHistoryMsg: boolean;
     placeholderResendCache?: CacheStore;
@@ -9,7 +9,7 @@ type ProcessMessageContext = {
     keyStore: SignalKeyStoreWithTransaction;
     ev: BaileysEventEmitter;
     getMessage: SocketConfig['getMessage'];
-    logger?: Logger;
+    logger?: ILogger;
     options: AxiosRequestConfig<{}>;
 };
 /** Cleans a received message to further processing */

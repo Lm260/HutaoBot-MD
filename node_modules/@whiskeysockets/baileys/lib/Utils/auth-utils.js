@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.initAuthCreds = exports.addTransactionCapability = exports.makeCacheableSignalKeyStore = void 0;
+const node_cache_1 = __importDefault(require("@cacheable/node-cache"));
 const crypto_1 = require("crypto");
-const node_cache_1 = __importDefault(require("node-cache"));
 const Defaults_1 = require("../Defaults");
 const crypto_2 = require("./crypto");
 const generics_1 = require("./generics");

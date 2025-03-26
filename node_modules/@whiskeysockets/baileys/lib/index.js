@@ -27,4 +27,5 @@ __exportStar(require("./Store"), exports);
 __exportStar(require("./Defaults"), exports);
 __exportStar(require("./WABinary"), exports);
 __exportStar(require("./WAM"), exports);
+__exportStar(require("./WAUSync"), exports);
 exports.default = Socket_1.default;

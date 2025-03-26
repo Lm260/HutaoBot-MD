@@ -1,51 +1,53 @@
 {
-  "name": "hutaobot-md",
-  "version": "8.0.0",
-  "description": "HutaoBot-MD, desenvolvida para oferecer melhor conexão, segurança e desempenho. Qualquer duvida, me chame no Whatsapp: +559284828701",
-  "main": "main.js",
-  "scripts": {
-    "start": "ulimit -c 0 && bash start.sh",
-    "test": "node main.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lm260/HutaoBot-MD.git"
-  },
-  "keywords": [
-    "nodejs",
-    "baileys",
-    "bot"
-  ],
-  "author": "Lm Only",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Lm260/HutaoBot-MD/issues"
-  },
-  "homepage": "https://github.com/Lm260/HutaoBot-MD#readme",
-  "dependencies": {
-    "@google/generative-ai": "^0.21.0",
-    "@vitalets/google-translate-api": "^9.2.0",
-    "@whiskeysockets/baileys": "^6.7.9",
-    "acrcloud": "^1.4.0",
-    "assemblyai": "^4.8.0",
-    "cfonts": "^3.3.0",
-    "chalk": "^4.0.0",
-    "cheerio": "^1.0.0",
-    "colors": "^1.4.0",
-    "escape-string-regexp": "^1.0.5",
-    "fake-useragent": "^1.0.1",
-    "fast-json-stringify": "^6.0.1",
-    "fast-yt-search": "^1.0.0",
-    "fluent-ffmpeg": "^2.1.3",
-    "jsdom": "^25.0.1",
-    "linkifyjs": "^4.2.0",
-    "moment-timezone": "^0.5.46",
-    "multistream": "^4.1.0",
-    "node-fetch": "^2.7.0",
-    "node-webpmux": "^3.2.0",
-    "performance-now": "^2.1.0",
-    "qrcode-terminal": "^0.12.0",
-    "qs": "^6.13.1",
-    "undici": "^7.2.0"
-  }
+ "name": "hutaobot-md",
+ "version": "8.0.0",
+ "description": "HutaoBot-MD, desenvolvida para oferecer melhor conexão, segurança e desempenho. Qualquer duvida, me chame no Whatsapp: +559284828701",
+ "main": "main.js",
+ "scripts": {
+  "start": "ulimit -c 0 && bash start.sh",
+  "test": "node main.js"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/Lm260/HutaoBot-MD.git"
+ },
+ "keywords": [
+  "nodejs",
+  "baileys",
+  "bot"
+ ],
+ "author": "Lm Only",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/Lm260/HutaoBot-MD/issues"
+ },
+ "homepage": "https://github.com/Lm260/HutaoBot-MD#readme",
+ "dependencies": {
+  "@google/generative-ai": "^0.21.0",
+  "@vitalets/google-translate-api": "^9.2.0",
+  "@whiskeysockets/baileys": "^6.7.16",
+  "acrcloud": "^1.4.0",
+  "assemblyai": "^4.9.0",
+  "cfonts": "^3.3.0",
+  "chalk": "^4.0.0",
+  "cheerio": "^1.0.0",
+  "colors": "^1.4.0",
+  "escape-string-regexp": "^1.0.5",
+  "fake-useragent": "^1.0.1",
+  "fast-json-stringify": "^6.0.1",
+  "fast-yt-search": "^1.0.0",
+  "fluent-ffmpeg": "^2.1.3",
+  "jsdom": "^25.0.1",
+  "linkifyjs": "^4.2.0",
+  "moment-timezone": "^0.5.46",
+  "multistream": "^4.1.0",
+  "node-cache": "^5.1.2",
+  "node-fetch": "^2.7.0",
+  "node-webpmux": "^3.2.0",
+  "performance-now": "^2.1.0",
+  "qrcode-terminal": "^0.12.0",
+  "qs": "^6.14.0",
+  "undici": "^7.4.0"
+ },
+ "updates": 0
 }

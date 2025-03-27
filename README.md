@@ -54,7 +54,7 @@ pkg install -y ffmpeg nodejs-lts wget tesseract git
 cd /sdcard/HutaoBot-MD && npm start
 ````
 > Use-o para toda vez que for ligar o bot!
-> É necessário uma key para usar o bot
+> É necessário **comprar** uma key para usar o bot
 ------------------
 
 ## Contratar Key
@@ -62,6 +62,13 @@ cd /sdcard/HutaoBot-MD && npm start
 **Key para ter acesso ao bot**
 
 * [__Fale Conosco__](https://wa.me/559284828701)
+
+## Atenção 
+
+- Use o bot moderadamente
+- Evite compartilhar o projeto 
+- Proibido venda de terceiros
+> Estaremos sempre de olho em qualquer ação inapropriada
 
 ## Contributors
 
@@ -75,13 +82,6 @@ cd /sdcard/HutaoBot-MD && npm start
 - **Comandos:** HutaoBot-MD contém todos os comando 100% gratuitos e funcionais. Algums podem apresentar falhas, mas iremos corrigir o mais rápido possível;
 - **Uso:** Fácil de usar, e rápida em processo de dados.
 - **Configuração e segurança**: Você pode programar o bot para enviar uma mensagem específica. E também manter a segurança de seu grupo com algums sistemas disponíveis.
-
-## Atenção 
-
-- Use o bot moderadamente
-- Evite compartilhar o projeto 
-- Proibido venda de terceiros
-> Estaremos sempre de olho em qualquer ação inapropriada
 
 ## License
 

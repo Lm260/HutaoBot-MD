@@ -20,6 +20,12 @@
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/lm_only_)
 </div>
 
+## AVISO ⚠️
+
+**É necessário comprar uma key para usar o bot!** 🔑
+> Obtenha uma logo abaixo em: **Contratar key**
+------------------
+
 ## INICIAR PELO TERMUX 🌷
 
 **Caso Não tenha o termux instalado**
@@ -63,7 +69,7 @@ cd /sdcard/HutaoBot-MD && npm start
 
 * [__Fale Conosco__](https://wa.me/559284828701)
 
-## Atenção 
+## Atenção
 
 - Use o bot moderadamente
 - Evite compartilhar o projeto 

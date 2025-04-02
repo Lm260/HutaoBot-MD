@@ -8,6 +8,7 @@ startWithCode() {
   NODE_ENV=production node --no-warnings main.js cd
 }
 
+
 startWithQr() {
   NODE_ENV=production node --no-warnings main.js qr
 }
@@ -18,7 +19,7 @@ defaultStart() {
 
 while :
 do
-  echo -e "\033[1;33mHUTAO BOT V8.0 UPDATE 💎 ^-^\n INICIANDO, AGUARDE UM MOMENTO...🌸\033[0m"
+  echo -e "    \033[1;33mHUTAO BOT V9.0 VIP 💎 ^-^\n INICIANDO, AGUARDE UM MOMENTO...🍾\033[0m"
   if [ "$1" = "up" ]; then
     updateBot
   elif [ "$1" = "cd" ]; then

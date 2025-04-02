@@ -10,23 +10,35 @@ const txt = {
     
     only_leaders: "*SOMENTE MEUS LÍDERES PODEM USAR ESTE COMANDO. 🤦‍♀️*",
     
-    only_adm: "*SOMENTE ADMS PODEM USAR ESTE COMANDO. 🤦‍♀️*",
+    only_adm: "*VOCÊ NÃO É ADM PARA EXECUTAR ESSE COMANDO! 😾*",
     
-    only_vip: "*ESTE COMANDO É EXCLUSIVO SOMENTE PARA OS VIP. 🍸💸*",
+    only_vip: "*COMANDO É EXCLUSIVO APENAS PARA OS VIP. 🍸💸*",
     
     only_group: "🔒 *COMANDO DISPONÍVEL APENAS PARA GRUPOS. 🙇‍♀️*",
     
     isBotAdm: "*Eu preciso ser ADM do grupo* 🥺",
     
+    /**
+     * #nomedobot# => Nome do seu bot
+     * #nomedodono# => Nome do dono 
+     */
+    packname: "➮ 𝑪𝒓𝒊𝒂𝒅𝒂 𝒑𝒐𝒓: 💖\n↳ 『 #nomedobot# 』\n\n➮ 𝑵𝒊𝒄𝒌 𝑫𝒐𝒏𝒐: 👑\n↳ 『 #nomedodono# 』⁩\n─────",
+    
+    /**
+     * #user# => Nome de usuário
+     * #lugar# => Onde a figurinha foi feita
+     */
+    authorname: "─────\n➮ 𝑭𝒆𝒊𝒕𝒂 𝑷𝒐𝒓: 💎\n↳ 『 #user# 』\n\n➮ 𝑮𝒓𝒖𝒑𝒐: 🌌\n↳ 『 #lugar# 』",
+    
     command_blocked: "*COMANDO INDISPONÍVEL PARA USO NESTE GRUPO!! 🙅‍♀️*",
     
     erros: {
-        api_error:  "*Ocorreu uma pequena falha ao concluir sua solicitação. Por favor, tente novamente!!* 💖🙇‍♀️",
+        api_error: "*Awnn! 🤧 Houve um pequeno erro ao processar o comando, tente novamente mais tarde!!* 💖🙇‍♀️",
      
-        command_error_executor:  "*Ocorreu uma pequena falha ao concluir sua solicitação. Por favor, tente novamente!!* 💖🙇‍♀️",
+        command_error_executor:   "*Awnn! 🤧 Houve um pequeno erro ao processar o comando, tente novamente mais tarde!!* 💖🙇‍♀️"
     },
     
-    highTimestamp: "*Não é possível realizar o download de mídias com duração superior a uma hora. 🙅‍♀️*",
+    highTimestamp: "*Não foi possível realizar o download, pois a mídia é superior à 1h ⏱️😔*",
     
     global_command_blocked: "🔒 *COMANDO INDISPONÍVEL PARA USO!! 🙅‍♀️*",
     
@@ -34,15 +46,15 @@ const txt = {
     
     Anti_Bot: "*NÃO É PERMITIDO OUTROS BOTS AQUI!! 😠*",
     
-    antilink_group: "*SEM LINKS DE GRUPO AQUI😡🗡*",
+    antilink_group: "*PROIBIDO LINKS DE OUTROS GRUPOS AQUI!!! 😡🗡*",
     
-    anti_sticker: "*FIGURINHAS É PROIBIDO AQUI🚫*",
+    anti_sticker: "*😡 PROIBIDO FIGURINHAS NO GRUPO 🚫*",
     
     anti_notas: "*METE O PÉ DAQUI SEU IMUNDO😡*",
     
-    anti_audio: "*AUDIO É PROIBIDO AQUI🙅‍♀️*",
+    anti_audio: "*🎙 -> 🚫 PROIBIDO ÁUDIOS AQUI 😡*",
     
-    anti_link: "*SEM LINKS NESTE GRUPO!!! 😡🗡*",
+    anti_link: "*PROIBIDO LINKS AQUI, IREI BANI-LO!!! 😡🗡*",
     
     anti_palavra: "*SEM PALAVRAS OFENSIVAS AQUI SEU IMUNDO!!!😡*",
     
@@ -52,9 +64,9 @@ const txt = {
     
     modorpg: "*O MODO-RPG PRECISA ESTAR ATIVO... ❗*\n> Comando de ativação: `ModoRpg`",
     
-    promote: "#user# *FOI PROMOVIDO A ADM DO GRUPO COM SUCESSO✨!! PELO ADM* #sender# 🙅‍♀️",
+    promote: "#user# *PROMOVIDO A CARGO DE ADMINISTRADOR COM SUCESSO✨!! PELO ADM* #sender# 🙅‍♀️",
     
-    demote: "*OKAY ADM... AGORA #user# É UM MEMBRO COMUM* 🙅‍♀️",
+    demote: "*OKAY ADM... AGORA #user# É UM MEMBRO COMUM* 🙅‍♀️", //#user# => @DaPessoa
     
     remove: "#user#\n〘 *FOI REMOVIDO COM SUCESSO* 〙- 『 _por motivos justos_ 』 - 🙅‍♀",
     

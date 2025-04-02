@@ -1,6 +1,6 @@
 {
  "name": "hutaobot-md",
- "version": "8.0.0",
+ "version": "9.0.0",
  "description": "HutaoBot-MD, desenvolvida para oferecer melhor conexão, segurança e desempenho. Qualquer duvida, me chame no Whatsapp: +559284828701",
  "main": "main.js",
  "scripts": {
@@ -23,7 +23,8 @@
  },
  "homepage": "https://github.com/Lm260/HutaoBot-MD#readme",
  "dependencies": {
-  "@google/generative-ai": "^0.21.0",
+  "@google/generative-ai": "^0.24.0",
+  "@lmonly/scget": "^1.0.4",
   "@vitalets/google-translate-api": "^9.2.0",
   "@whiskeysockets/baileys": "^6.7.16",
   "acrcloud": "^1.4.0",
@@ -43,11 +44,10 @@
   "multistream": "^4.1.0",
   "node-cache": "^5.1.2",
   "node-fetch": "^2.7.0",
-  "node-webpmux": "^3.2.0",
+  "node-webpmux": "^3.2.1",
   "performance-now": "^2.1.0",
   "qrcode-terminal": "^0.12.0",
-  "qs": "^6.14.0",
-  "undici": "^7.4.0"
+  "qs": "^6.14.0"
  },
  "updates": 0
 }

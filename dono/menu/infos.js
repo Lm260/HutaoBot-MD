@@ -2,9 +2,9 @@ module.exports = {
 
 infodono(NickDono, NomeDoBot, NumeroDoDono, dono1, dono2, dono3, dono4, dono5, dono6 ) {
 return `
-╭━━━✰°❀•°✮°•❀°✾✰━━━╮
+┏═•✭･ﾟ✧*･ﾟ| ⊱✿⊰ |*✭˚･ﾟ✧･ﾟ•═┓
 ┝⋆⃟ۣۜ᭪➣ 𖡦 𝐈𝐍𝐅𝐎 𝐃𝐎𝐍𝐎 【👑】
-╰━━━✰°❀•°✮°•❀°✾✰━━━╯
+┗═•✭･ﾟ✧*･ﾟ| ⊱✿⊰ |*✭˚･ﾟ✧･ﾟ•═┛
 ┃╭━━─ ≪ •❈• ≫ ─━━╮
 ┃╎ ✫✫✫✫✫
 ┃╎ 𝐋𝐢𝐝𝐞𝐫𝐞𝐬 𝐝𝐚 ${NomeDoBot}
@@ -21,7 +21,7 @@ return `
 ┃╎
 ┃╎ ✫✫✫✫✫
 ┃╰━━─ ≪ •❈• ≫ ─━━╯
-╰━━━✰°❀•°✮°•❀°✾✰━━━╯
+┗═•✭･ﾟ✧*･ﾟ| ⊱✿⊰ |*✭˚･ﾟ✧･ﾟ•═┛
 
 ✰✰✰✰✰`;
 },
@@ -94,8 +94,8 @@ return `
 ┃╎ Hii!! @${sender.split('@')[0]} ฅ^•ﻌ•^ฅ
 ┃╎᭪➣ Prefixo: 〘 ${prefixo} 〙
 ┃╎᭪➣ Nome do bot: ${NomeDoBot}
-┃╎᭪➣ Versão do bot: 8.0.0 💎
-┃╎᭪➣ Baileys version: 6.7.9 
+┃╎᭪➣ Versão do bot: 9.0.0 💎
+┃╎᭪➣ Baileys version: 6.7.16 
 ┃╎᭪➣ Tema: Hutao / Genshin Impact〘 Game 〙
 ┃╎᭪➣ Dono: ${NickDono}
 ┃╎᭪➣ Numero do dono: ${NumeroDoDono}

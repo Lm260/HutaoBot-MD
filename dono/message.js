@@ -16,6 +16,10 @@ const txt = {
     
     only_group: "🔒 *COMANDO DISPONÍVEL APENAS PARA GRUPOS. 🙇‍♀️*",
     
+    LinkGrupoDetect: '0', 
+    
+    LinkDetect: "0", //Zero para não exibir a mensagem. Mude caso for exibir um texto.
+    
     isBotAdm: "*Eu preciso ser ADM do grupo* 🥺",
     
     /**

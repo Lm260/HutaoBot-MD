@@ -21,7 +21,7 @@
  "bugs": {
   "url": "https://github.com/Lm260/HutaoBot-MD/issues"
  },
- "homepage": "https://github.com/Lm260/HutaoBot-MD#readme",
+ "homepage": "https://github.com/Lm-Only/HutaoBot#readme",
  "dependencies": {
   "@google/generative-ai": "^0.24.0",
   "@lmonly/scget": "^1.0.4",
